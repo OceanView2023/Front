@@ -1,0 +1,59 @@
+section {
+  inline-size: 100%;
+  display: grid;
+  grid-template-columns: 32.85% 10.9% 11.9% 10.9% 33.45%;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+}
+img {
+  inline-size: 100%;
+  block-size: auto;
+}
+.disponible img {
+  filter: invert(150%) sepia(54%) saturate(431%) hue-rotate(27deg)
+    brightness(96%) contrast(109%);
+}
+.disponible div p {
+  color: #70bb00;
+  text-align: center;
+}
+
+.disponible:hover {
+  cursor: pointer;
+}
+.vendido img {
+  filter: invert(186%) sepia(86%) saturate(496%) hue-rotate(309deg)
+    brightness(106%) contrast(55%);
+}
+.vendido div p {
+  color: #b7580a;
+  text-align: center;
+}
+
+.container-departamento {
+  position: relative;
+}
+.container-status {
+  background-color: white !important;
+  opacity: 0;
+  block-size: 0;
+  inline-size: 100%;
+  position: absolute;
+  inset-block-end: 0;
+  clip-path: polygon(
+    0% 0%,
+    0% 85.56%,
+    35% 85.56%,
+    49.45% 100%,
+    63.9% 85.56%,
+    100% 85.56%,
+    100% 0%
+  );
+}
+.disponible:hover .container-status {
+  block-size: 220%;
+  opacity: 1;
+}
+.vendido:hover .container-status {
+  block-size: 150%;
+  opacity: 1;
+}
