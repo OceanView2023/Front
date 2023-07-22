@@ -1,10 +1,18 @@
-section {
+.container-mes-tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  cursor: pointer;
+}
+.container-mes-tab div {
+  border: 2px solid red;
+}
+.container-mes-depart {
   inline-size: 100%;
   display: grid;
   grid-template-columns: 32.85% 10.9% 11.9% 10.9% 33.45%;
   grid-template-rows: auto auto auto auto auto auto auto auto;
 }
-img {
+.container-mes-depart img {
   inline-size: 100%;
   block-size: auto;
 }
