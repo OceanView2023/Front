@@ -24,6 +24,9 @@
 .mar {
   background: #afd3c5;
 }
+.container-mes .container-vista {
+}
+
 .container-mes p {
   margin: 0;
   padding-block: 8px;
@@ -33,13 +36,12 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   cursor: pointer;
   gap: 3px;
-  margin-block-start: 4px;
+  margin-block: 4px;
 }
 @media screen and (max-width: 1000px) {
   .container-mes-tab {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
-    /* grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto; */
     cursor: pointer;
     gap: 3px;
   }
@@ -72,7 +74,7 @@
 .container-dos-fachadas {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-block-start: 4px;
+  /* margin-block-start: 4px; */
 }
 @media screen and (max-width: 928px) {
   .container-dos-fachadas {
@@ -90,7 +92,6 @@
   inline-size: 100%;
   display: grid;
   grid-template-columns: 8.7057457% 26.2913522% 30.1799187% 26.1172373% 8.7057457%;
-
   grid-template-rows: auto auto auto auto auto auto auto auto;
 }
 .container-mes-depart-norte img,
@@ -120,9 +121,6 @@
 }
 
 .Reservado img {
-  /* filter: invert(74%) sepia(46%) saturate(288%) hue-rotate(158deg)
-    brightness(90%) contrast(88%); */
-
   filter: invert(75%) sepia(99%) saturate(292%) hue-rotate(189deg)
     brightness(91%) contrast(89%);
 }

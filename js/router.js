@@ -25,7 +25,7 @@ mes3.addEventListener("click", nextMes);
 // mes12.addEventListener("click", nextMes);
 
 function nextMes(event) {
-  console.log("click");
+  //   console.log("click");
   const $tabPreguntaSelected = event.currentTarget;
   const $id = event.currentTarget.id;
   const $tabPreguntaActive = document.querySelector(

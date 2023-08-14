@@ -25,12 +25,13 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="css/components.css" rel="stylesheet" type="text/css" />
+    <link href="css/cotizador.css" rel="stylesheet" type="text/css" />
     <link
       href="css/oceanviewsisalmerida-b5e1b6d83aeb5a614d.css"
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" type="text/css" href="../css/departamentos.css" />
+    <link rel="stylesheet" type="text/css" href="css/departamentos.css" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link
       href="https://fonts.gstatic.com"
@@ -801,7 +802,249 @@
               <div>
                 <h2 class="h2">Master Plan</h2>
 
-                <div role="tablist">
+                <section id="modal-cotizador">
+                  <section class="container-seccion-1">
+                    <h3>Moneda desarrollo</h3>
+                    <p>M.N.</p>
+                    <h3>Unidad</h3>
+                    <p id="unidad-cotizador"></p>
+                    <h3>Área</h3>
+                    <p id="area-cotizador"></p>
+                    <h3>Precio por lista</h3>
+                    <p id="precio-cotizador"></p>
+                    <button class="descargar-plano-ilustrativo">
+                      Plano ilustrativo
+                      <img
+                        src="/images/icon-descargar.svg"
+                        alt="Descargar plano ilustrativo"
+                      />
+                    </button>
+                  </section>
+
+                  <section class="container-seccion-2">
+                    <form id="myForm">
+                      <section class="container-porcentajes">
+                        <label
+                          class="container-plazo-de-financiamiento"
+                          for="plazo-de-financiamiento"
+                        >
+                          <strong
+                            >Plazo de Financiamiento: <span>*</span></strong
+                          >
+                          <select
+                            required
+                            id="plazo-de-financiamiento"
+                            class="plazo-de-financiamiento"
+                            name="plazo-de-financiamiento"
+                            type="checkbox"
+                          >
+                            <option value="plazo">Seleccione un plazo</option>
+                            <option value="enganche">
+                              10% Enganche, 15 meses
+                            </option>
+                            <option value="contado">
+                              Contado, 9% de descuento
+                            </option>
+                          </select>
+                        </label>
+                        <label class="container-descuento" for="descuento">
+                          <strong>Descuento m2: <span>*</span></strong>
+                          <section>
+                            <div class="container-input-cotizador">
+                              <span>%</span>
+                              <input
+                                disabled
+                                value=""
+                                class="descuento"
+                                type="number"
+                                name="descuento"
+                                id="descuento"
+                                placeholder="Porcentaje"
+                              />
+                            </div>
+                            <span>=</span>
+                            <div class="container-input-cotizador">
+                              <span>$</span>
+                              <input
+                                disabled
+                                value=""
+                                class="descuento-valor"
+                                type="number"
+                                name="descuento-valor"
+                                id="descuento-valor"
+                                placeholder="Porcentaje"
+                              />
+                            </div>
+                          </section>
+                        </label>
+                        <label class="container-enganche" for="enganche">
+                          <strong>Enganche: <span>*</span></strong>
+                          <section>
+                            <div class="container-input-cotizador input-white">
+                              <span>%</span>
+                              <input
+                                class="accesible"
+                                value=""
+                                class="enganche"
+                                type="number"
+                                name="enganche"
+                                id="enganche"
+                                placeholder="Porcentaje"
+                              />
+                            </div>
+                            <span>=</span>
+                            <div class="container-input-cotizador input-white">
+                              <span>$</span>
+                              <input
+                                class="accesible"
+                                value=""
+                                class="enganche-valor"
+                                type="number"
+                                name="enganche-valor"
+                                id="enganche-valor"
+                                placeholder="Valor"
+                              />
+                            </div>
+                          </section>
+                        </label>
+                        <label class="container-financiar" for="financiar">
+                          <strong>Total a Financiar: <span>*</span></strong>
+                          <section>
+                            <div class="container-input-cotizador input-white">
+                              <span>%</span>
+                              <input
+                                disabled
+                                value=""
+                                class="financiar"
+                                type="number"
+                                name="financiar"
+                                id="financiar"
+                                placeholder="Porcentaje"
+                              />
+                            </div>
+                            <span>=</span>
+                            <div class="container-input-cotizador input-white">
+                              <span>$</span>
+                              <input
+                                disabled
+                                value=""
+                                class="financiar-valor"
+                                type="number"
+                                name="financiar-valor"
+                                id="financiar-valor"
+                                placeholder="Valor"
+                              />
+                            </div>
+                          </section>
+                        </label>
+                        <label
+                          class="container-mensualidades"
+                          for="mensualidades"
+                        >
+                          <strong>Mensualidades: <span>*</span></strong>
+                          <section>
+                            <div class="container-input-cotizador input-white">
+                              <span>%</span>
+                              <input
+                                disabled
+                                value=""
+                                class="mensualidades"
+                                type="number"
+                                name="mensualidades"
+                                id="mensualidades"
+                                placeholder="Num Mensualidades"
+                              />
+                            </div>
+                            <span>de</span>
+                            <div class="container-input-cotizador input-white">
+                              <span>$</span>
+                              <input
+                                disabled
+                                value=""
+                                class="Cantidad Mensualidades"
+                                type="number"
+                                name="Cantidad Mensualidades"
+                                id="Cantidad Mensualidades"
+                                placeholder="Valor"
+                              />
+                            </div>
+                          </section>
+                        </label>
+                      </section>
+                      <section class="container-person">
+                        <section class="names-cotizador">
+                          <label for="name-cotizador">
+                            <input
+                              type="text"
+                              id="name-cotizador"
+                              class="name-cotizador"
+                              placeholder="Nombre(s)"
+                              name="name-cotizador"
+                            />
+                          </label>
+                          <label for="apellido-materno-cotizador">
+                            <input
+                              type="text"
+                              id="apellido-cotizador"
+                              class="apellido-cotizador"
+                              placeholder="Apellido Materno"
+                              name="apellido-cotizador"
+                            />
+                          </label>
+                          <label for="apellido-paterno-cotizador">
+                            <input
+                              type="text"
+                              id="apellido-cotizador"
+                              class="apellido-cotizador"
+                              placeholder="Apellido Paterno"
+                              name="apellido-cotizador"
+                            />
+                          </label>
+                        </section>
+
+                        <section class="contact-cotizador">
+                          <label for="telefono-cotizador">
+                            <input
+                              type="number"
+                              id="telefono-cotizador"
+                              class="telefono-cotizador"
+                              placeholder="Número de teléfono"
+                              name="telefono-cotizador"
+                            />
+                          </label>
+                          <label for="correo-cotizador">
+                            <input
+                              type="email"
+                              id="correo-cotizador"
+                              class="correo-cotizador"
+                              placeholder="Correo electrónico"
+                              name="correo-cotizador"
+                            />
+                          </label>
+                        </section>
+
+                        <label
+                          class="container-message-cotizador"
+                          for="message-cotizador"
+                        >
+                          <textarea
+                            type="text"
+                            id="message-cotizador"
+                            class="message-cotizador"
+                            placeholder="Escribe un comentario"
+                            name="message-cotizador"
+                            rows="4"
+                          ></textarea>
+                        </label>
+                        <button class="descargar-cotizacion">
+                          Descargar Cotización
+                        </button>
+                      </section>
+                    </form>
+                  </section>
+                </section>
+
+                <article role="tablist">
                   <section class="container-mes-tab">
                     <div
                       class="tab enero-tab"
@@ -906,165 +1149,177 @@
                     hidden
                   >
                     <div class="container-mes laguna">
-                      <div><p>VISTA A LA LAGUNA</p></div>
+                      <div class="container-vista">
+                        <p>VISTA A LA LAGUNA</p>
+                      </div>
                       <div class="container-mes-depart-norte">
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_01.png"
                           alt=""
                         />
 
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_00-01.png"
+                          src="images/departamentos-norte/FachadaNorte_00-01.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_00-02.png"
+                          src="images/departamentos-norte/FachadaNorte_00-02.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_00-03.png"
+                          src="images/departamentos-norte/FachadaNorte_00-03.png"
                           alt=""
                         />
 
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_02.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_03.png"
                           alt=""
                         />
 
                         <div class="enero_norte_P_6_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_01-01.png"
+                            id="enero_norte_P_6_D_1"
+                            src="images/departamentos-norte/FachadaNorte_01-01.png"
                             alt=""
                           />
-                          <div class="container-status">
-                            <p class="precio-depart"></p>
-                            <p class="status-depart"></p>
-                          </div>
+                          <div class="container-status"></div>
                         </div>
                         <div class="enero_norte_P_6_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_01-02.png"
+                            id="enero_norte_P_6_D_2"
+                            src="images/departamentos-norte/FachadaNorte_01-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_norte_P_6_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_01-03.png"
+                            id="enero_norte_P_6_D_3"
+                            src="images/departamentos-norte/FachadaNorte_01-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_04.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_04.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_05.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_05.png"
                           alt=""
                         />
 
                         <div class="enero_norte_P_5_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_02-01.png"
+                            id="enero_norte_P_5_D_1"
+                            src="images/departamentos-norte/FachadaNorte_02-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_norte_P_5_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_02-02.png"
+                            id="enero_norte_P_5_D_2"
+                            src="images/departamentos-norte/FachadaNorte_02-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_norte_P_5_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_02-03.png"
+                            id="enero_norte_P_5_D_3"
+                            src="images/departamentos-norte/FachadaNorte_02-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_06.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_06.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_07.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_07.png"
                           alt=""
                         />
 
                         <div class="enero_norte_P_4_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_03-01.png"
+                            id="enero_norte_P_4_D_1"
+                            src="images/departamentos-norte/FachadaNorte_03-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_norte_P_4_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_03-02.png"
+                            id="enero_norte_P_4_D_2"
+                            src="images/departamentos-norte/FachadaNorte_03-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_norte_P_4_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_03-03.png"
+                            id="enero_norte_P_4_D_3"
+                            src="images/departamentos-norte/FachadaNorte_03-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_08.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_08.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_09.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_09.png"
                           alt=""
                         />
 
                         <div class="enero_norte_P_3_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_04-01.png"
+                            id="enero_norte_P_3_D_1"
+                            src="images/departamentos-norte/FachadaNorte_04-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_norte_P_3_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_04-02.png"
+                            id="enero_norte_P_3_D_2"
+                            src="images/departamentos-norte/FachadaNorte_04-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_norte_P_3_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_04-03.png"
+                            id="enero_norte_P_3_D_3"
+                            src="images/departamentos-norte/FachadaNorte_04-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_10.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_10.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_11.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_11.png"
                           alt=""
                         />
 
                         <div class="enero_norte_P_2_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_05-01.png"
+                            id="enero_norte_P_2_D_1"
+                            src="images/departamentos-norte/FachadaNorte_05-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
@@ -1072,7 +1327,8 @@
 
                         <div class="enero_norte_P_2_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_05-02.png"
+                            id="enero_norte_P_2_D_2"
+                            src="images/departamentos-norte/FachadaNorte_05-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
@@ -1080,24 +1336,26 @@
 
                         <div class="enero_norte_P_2_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_05-03.png"
+                            id="enero_norte_P_2_D_3"
+                            src="images/departamentos-norte/FachadaNorte_05-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_12.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_12.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_13.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_13.png"
                           alt=""
                         />
 
                         <div class="enero_norte_P_1_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_06-01.png"
+                            id="enero_norte_P_1_D_1"
+                            src="images/departamentos-norte/FachadaNorte_06-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
@@ -1105,7 +1363,8 @@
 
                         <div class="enero_norte_P_1_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_06-02.png"
+                            id="enero_norte_P_1_D_2"
+                            src="images/departamentos-norte/FachadaNorte_06-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
@@ -1113,198 +1372,201 @@
 
                         <div class="enero_norte_P_1_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-norte/FachadaNorte_06-03.png"
+                            id="enero_norte_P_1_D_3"
+                            src="images/departamentos-norte/FachadaNorte_06-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_14.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_14.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_15.png"
-                          alt=""
-                        />
-
-                        <img
-                          src="../images/departamentos-norte/FachadaNorte_07-01.png"
-                          alt=""
-                        />
-                        <img
-                          src="../images/departamentos-norte/FachadaNorte_07-02.png"
-                          alt=""
-                        />
-                        <img
-                          src="../images/departamentos-norte/FachadaNorte_07-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_15.png"
                           alt=""
                         />
 
                         <img
-                          src="../images/departamentos-norte/FachadaNorteLateral_16.png"
+                          src="images/departamentos-norte/FachadaNorte_07-01.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-norte/FachadaNorte_07-02.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-norte/FachadaNorte_07-03.png"
+                          alt=""
+                        />
+
+                        <img
+                          src="images/departamentos-norte/FachadaNorteLateral_16.png"
                           alt=""
                         />
                       </div>
                     </div>
 
                     <div class="container-mes mar">
-                      <div><p>VISTA AL MAR</p></div>
+                      <div class="container-vista">
+                        <p>VISTA AL MAR</p>
+                      </div>
                       <div class="container-mes-depart-sur">
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_01.png"
                           alt=""
                         />
 
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_00-01.png"
+                          src="images/departamentos-sur/FachadaNorte_00-01.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_00-02.png"
+                          src="images/departamentos-sur/FachadaNorte_00-02.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_00-03.png"
+                          src="images/departamentos-sur/FachadaNorte_00-03.png"
                           alt=""
                         />
 
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_02.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_03.png"
                           alt=""
                         />
 
                         <div class="enero_sur_P_6_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_01-01.png"
+                            src="images/departamentos-sur/FachadaNorte_01-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_sur_P_6_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_01-02.png"
+                            src="images/departamentos-sur/FachadaNorte_01-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_sur_P_6_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_01-03.png"
+                            src="images/departamentos-sur/FachadaNorte_01-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_04.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_04.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_05.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_05.png"
                           alt=""
                         />
 
                         <div class="enero_sur_P_5_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_02-01.png"
+                            src="images/departamentos-sur/FachadaNorte_02-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_sur_P_5_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_02-02.png"
+                            src="images/departamentos-sur/FachadaNorte_02-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_sur_P_5_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_02-03.png"
+                            src="images/departamentos-sur/FachadaNorte_02-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_06.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_06.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_07.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_07.png"
                           alt=""
                         />
 
                         <div class="enero_sur_P_4_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_03-01.png"
+                            src="images/departamentos-sur/FachadaNorte_03-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_sur_P_4_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_03-02.png"
+                            src="images/departamentos-sur/FachadaNorte_03-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_sur_P_4_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_03-03.png"
+                            src="images/departamentos-sur/FachadaNorte_03-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_08.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_08.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_09.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_09.png"
                           alt=""
                         />
 
                         <div class="enero_sur_P_3_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_04-01.png"
+                            src="images/departamentos-sur/FachadaNorte_04-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_sur_P_3_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_04-02.png"
+                            src="images/departamentos-sur/FachadaNorte_04-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
                         <div class="enero_sur_P_3_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_04-03.png"
+                            src="images/departamentos-sur/FachadaNorte_04-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_10.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_10.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_11.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_11.png"
                           alt=""
                         />
 
                         <div class="enero_sur_P_2_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_05-01.png"
+                            src="images/departamentos-sur/FachadaNorte_05-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
@@ -1312,7 +1574,7 @@
 
                         <div class="enero_sur_P_2_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_05-02.png"
+                            src="images/departamentos-sur/FachadaNorte_05-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
@@ -1320,24 +1582,24 @@
 
                         <div class="enero_sur_P_2_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_05-03.png"
+                            src="images/departamentos-sur/FachadaNorte_05-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_12.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_12.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_13.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_13.png"
                           alt=""
                         />
 
                         <div class="enero_sur_P_1_D_1 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_06-01.png"
+                            src="images/departamentos-sur/FachadaNorte_06-01.png"
                             alt=""
                           />
                           <div class="container-status"></div>
@@ -1345,7 +1607,7 @@
 
                         <div class="enero_sur_P_1_D_2 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_06-02.png"
+                            src="images/departamentos-sur/FachadaNorte_06-02.png"
                             alt=""
                           />
                           <div class="container-status"></div>
@@ -1353,36 +1615,36 @@
 
                         <div class="enero_sur_P_1_D_3 container-departamento">
                           <img
-                            src="../images/departamentos-sur/FachadaNorte_06-03.png"
+                            src="images/departamentos-sur/FachadaNorte_06-03.png"
                             alt=""
                           />
                           <div class="container-status"></div>
                         </div>
 
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_14.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_14.png"
                           alt=""
                         />
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_15.png"
-                          alt=""
-                        />
-
-                        <img
-                          src="../images/departamentos-sur/FachadaNorte_07-01.png"
-                          alt=""
-                        />
-                        <img
-                          src="../images/departamentos-sur/FachadaNorte_07-02.png"
-                          alt=""
-                        />
-                        <img
-                          src="../images/departamentos-sur/FachadaNorte_07-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_15.png"
                           alt=""
                         />
 
                         <img
-                          src="../images/departamentos-sur/FachadaNorteLateral_16.png"
+                          src="images/departamentos-sur/FachadaNorte_07-01.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-sur/FachadaNorte_07-02.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-sur/FachadaNorte_07-03.png"
+                          alt=""
+                        />
+
+                        <img
+                          src="images/departamentos-sur/FachadaNorteLateral_16.png"
                           alt=""
                         />
                       </div>
@@ -1396,550 +1658,524 @@
                     tabindex="0"
                     hidden
                   >
-                    <div class="container-mes-depart-norte">
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_01.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_00-01.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_00-02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_00-03.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_03.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_norte_P_6_D_1 container-departamento">
+                    <div class="container-mes laguna">
+                      <div class="container-vista">
+                        <p>VISTA A LA LAGUNA</p>
+                      </div>
+                      <div class="container-mes-depart-norte">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_01-01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_01.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_norte_P_6_D_2 container-departamento">
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_01-02.png"
+                          src="images/departamentos-norte/FachadaNorte_00-01.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_norte_P_6_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_01-03.png"
+                          src="images/departamentos-norte/FachadaNorte_00-02.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_04.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_05.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_norte_P_5_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_02-01.png"
+                          src="images/departamentos-norte/FachadaNorte_00-03.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_norte_P_5_D_2 container-departamento">
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_02-02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_02.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_norte_P_5_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_02-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_03.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div
+                          class="febrero_norte_P_6_D_1 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_01-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
+                        <div
+                          class="febrero_norte_P_6_D_2 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_01-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div
+                          class="febrero_norte_P_6_D_3 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_01-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
 
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_06.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_07.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_norte_P_4_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_03-01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_04.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_norte_P_4_D_2 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_03-02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_05.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div
+                          class="febrero_norte_P_5_D_1 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_02-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
-                      <div class="febrero_norte_P_4_D_3 container-departamento">
+                        <div
+                          class="febrero_norte_P_5_D_2 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_02-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div
+                          class="febrero_norte_P_5_D_3 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_02-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_03-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_06.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_08.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_09.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_norte_P_3_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_04-01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_07.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div
+                          class="febrero_norte_P_4_D_1 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_03-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
-                      <div class="febrero_norte_P_3_D_2 container-departamento">
+                        <div
+                          class="febrero_norte_P_4_D_2 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_03-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div
+                          class="febrero_norte_P_4_D_3 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_03-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_04-02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_08.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_norte_P_3_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_04-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_09.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div
+                          class="febrero_norte_P_3_D_1 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_04-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
+                        <div
+                          class="febrero_norte_P_3_D_2 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_04-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div
+                          class="febrero_norte_P_3_D_3 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_04-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
 
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_10.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_11.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_norte_P_2_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_05-01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_10.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="febrero_norte_P_2_D_2 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_05-02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_11.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
 
-                      <div class="febrero_norte_P_2_D_3 container-departamento">
+                        <div
+                          class="febrero_norte_P_2_D_1 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_05-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div
+                          class="febrero_norte_P_2_D_2 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_05-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div
+                          class="febrero_norte_P_2_D_3 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_05-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_05-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_12.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_12.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_13.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_norte_P_1_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_06-01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_13.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
 
-                      <div class="febrero_norte_P_1_D_2 container-departamento">
+                        <div
+                          class="febrero_norte_P_1_D_1 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_06-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div
+                          class="febrero_norte_P_1_D_2 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_06-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div
+                          class="febrero_norte_P_1_D_3 container-departamento"
+                        >
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_06-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_06-02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_14.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="febrero_norte_P_1_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_06-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_15.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
+
+                        <img
+                          src="images/departamentos-norte/FachadaNorte_07-01.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-norte/FachadaNorte_07-02.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-norte/FachadaNorte_07-03.png"
+                          alt=""
+                        />
+
+                        <img
+                          src="images/departamentos-norte/FachadaNorteLateral_16.png"
+                          alt=""
+                        />
                       </div>
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_14.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_15.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_07-01.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_07-02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_07-03.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_16.png"
-                        alt=""
-                      />
                     </div>
 
-                    <div class="container-mes-depart-sur">
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_01.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_00-01.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_00-02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_00-03.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_03.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_sur_P_6_D_1 container-departamento">
+                    <div class="container-mes mar">
+                      <div class="container-vista">
+                        <p>VISTA AL MAR</p>
+                      </div>
+                      <div class="container-mes-depart-sur">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_01-01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_01.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_sur_P_6_D_2 container-departamento">
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_01-02.png"
+                          src="images/departamentos-sur/FachadaNorte_00-01.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_sur_P_6_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_01-03.png"
+                          src="images/departamentos-sur/FachadaNorte_00-02.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_04.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_05.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_sur_P_5_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_02-01.png"
+                          src="images/departamentos-sur/FachadaNorte_00-03.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_sur_P_5_D_2 container-departamento">
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_02-02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_02.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_sur_P_5_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_02-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_03.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="febrero_sur_P_6_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_01-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
+                        <div class="febrero_sur_P_6_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_01-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="febrero_sur_P_6_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_01-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
 
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_06.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_07.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_sur_P_4_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_03-01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_04.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_sur_P_4_D_2 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_03-02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_05.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="febrero_sur_P_5_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_02-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
-                      <div class="febrero_sur_P_4_D_3 container-departamento">
+                        <div class="febrero_sur_P_5_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_02-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="febrero_sur_P_5_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_02-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_03-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_06.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_08.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_09.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_sur_P_3_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_04-01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_07.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="febrero_sur_P_4_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_03-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
-                      <div class="febrero_sur_P_3_D_2 container-departamento">
+                        <div class="febrero_sur_P_4_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_03-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="febrero_sur_P_4_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_03-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_04-02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_08.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="febrero_sur_P_3_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_04-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_09.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="febrero_sur_P_3_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_04-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
+                        <div class="febrero_sur_P_3_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_04-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="febrero_sur_P_3_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_04-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
 
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_10.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_11.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_sur_P_2_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_05-01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_10.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="febrero_sur_P_2_D_2 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_05-02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_11.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
 
-                      <div class="febrero_sur_P_2_D_3 container-departamento">
+                        <div class="febrero_sur_P_2_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_05-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="febrero_sur_P_2_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_05-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="febrero_sur_P_2_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_05-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_05-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_12.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_12.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_13.png"
-                        alt=""
-                      />
-
-                      <div class="febrero_sur_P_1_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_06-01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_13.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
 
-                      <div class="febrero_sur_P_1_D_2 container-departamento">
+                        <div class="febrero_sur_P_1_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_06-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="febrero_sur_P_1_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_06-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="febrero_sur_P_1_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_06-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_06-02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_14.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="febrero_sur_P_1_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_06-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_15.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
+
+                        <img
+                          src="images/departamentos-sur/FachadaNorte_07-01.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-sur/FachadaNorte_07-02.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-sur/FachadaNorte_07-03.png"
+                          alt=""
+                        />
+
+                        <img
+                          src="images/departamentos-sur/FachadaNorteLateral_16.png"
+                          alt=""
+                        />
                       </div>
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_14.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_15.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_07-01.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_07-02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_07-03.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_16.png"
-                        alt=""
-                      />
                     </div>
                   </section>
 
@@ -1950,553 +2186,491 @@
                     tabindex="0"
                     hidden
                   >
-                    <div class="container-mes-depart-norte">
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_01.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_00-01.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_00-02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_00-03.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_03.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_norte_P_6_D_1 container-departamento">
+                    <div class="container-mes laguna">
+                      <div class="container-vista">
+                        <p>VISTA A LA LAGUNA</p>
+                      </div>
+                      <div class="container-mes-depart-norte">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_01-01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_01.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_norte_P_6_D_2 container-departamento">
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_01-02.png"
+                          src="images/departamentos-norte/FachadaNorte_00-01.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_norte_P_6_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_01-03.png"
+                          src="images/departamentos-norte/FachadaNorte_00-02.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_04.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_05.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_norte_P_5_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_02-01.png"
+                          src="images/departamentos-norte/FachadaNorte_00-03.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_norte_P_5_D_2 container-departamento">
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_02-02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_02.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_norte_P_5_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_02-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_03.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="marzo_norte_P_6_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_01-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
+                        <div class="marzo_norte_P_6_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_01-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="marzo_norte_P_6_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_01-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
 
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_06.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_07.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_norte_P_4_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_03-01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_04.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_norte_P_4_D_2 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_03-02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_05.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="marzo_norte_P_5_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_02-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
-                      <div class="marzo_norte_P_4_D_3 container-departamento">
+                        <div class="marzo_norte_P_5_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_02-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="marzo_norte_P_5_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_02-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_03-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_06.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_08.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_09.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_norte_P_3_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_04-01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_07.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="marzo_norte_P_4_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_03-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
-                      <div class="marzo_norte_P_3_D_2 container-departamento">
+                        <div class="marzo_norte_P_4_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_03-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="marzo_norte_P_4_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_03-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_04-02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_08.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_norte_P_3_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_04-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_09.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="marzo_norte_P_3_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_04-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
+                        <div class="marzo_norte_P_3_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_04-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="marzo_norte_P_3_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_04-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
 
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_10.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_11.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_norte_P_2_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_05-01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_10.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="marzo_norte_P_2_D_2 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_05-02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_11.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
 
-                      <div class="marzo_norte_P_2_D_3 container-departamento">
+                        <div class="marzo_norte_P_2_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_05-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="marzo_norte_P_2_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_05-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="marzo_norte_P_2_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_05-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_05-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_12.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_12.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_13.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_norte_P_1_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_06-01.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_13.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
 
-                      <div class="marzo_norte_P_1_D_2 container-departamento">
+                        <div class="marzo_norte_P_1_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_06-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="marzo_norte_P_1_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_06-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="marzo_norte_P_1_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-norte/FachadaNorte_06-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_06-02.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_14.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="marzo_norte_P_1_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-norte/FachadaNorte_06-03.png"
+                          src="images/departamentos-norte/FachadaNorteLateral_15.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
+
+                        <img
+                          src="images/departamentos-norte/FachadaNorte_07-01.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-norte/FachadaNorte_07-02.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-norte/FachadaNorte_07-03.png"
+                          alt=""
+                        />
+
+                        <img
+                          src="images/departamentos-norte/FachadaNorteLateral_16.png"
+                          alt=""
+                        />
                       </div>
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_14.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_15.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_07-01.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_07-02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-norte/FachadaNorte_07-03.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-norte/FachadaNorteLateral_16.png"
-                        alt=""
-                      />
                     </div>
 
-                    <div class="container-mes-depart-sur">
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_01.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_00-01.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_00-02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_00-03.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_03.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_sur_P_6_D_1 container-departamento">
+                    <div class="container-mes mar">
+                      <div class="container-vista">
+                        <p>VISTA AL MAR</p>
+                      </div>
+                      <div class="container-mes-depart-sur">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_01-01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_01.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_sur_P_6_D_2 container-departamento">
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_01-02.png"
+                          src="images/departamentos-sur/FachadaNorte_00-01.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_sur_P_6_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_01-03.png"
+                          src="images/departamentos-sur/FachadaNorte_00-02.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_04.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_05.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_sur_P_5_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_02-01.png"
+                          src="images/departamentos-sur/FachadaNorte_00-03.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_sur_P_5_D_2 container-departamento">
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_02-02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_02.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_sur_P_5_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_02-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_03.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="marzo_sur_P_6_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_01-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
+                        <div class="marzo_sur_P_6_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_01-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="marzo_sur_P_6_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_01-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
 
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_06.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_07.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_sur_P_4_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_03-01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_04.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_sur_P_4_D_2 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_03-02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_05.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="marzo_sur_P_5_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_02-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
-                      <div class="marzo_sur_P_4_D_3 container-departamento">
+                        <div class="marzo_sur_P_5_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_02-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="marzo_sur_P_5_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_02-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_03-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_06.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_08.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_09.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_sur_P_3_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_04-01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_07.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="marzo_sur_P_4_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_03-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
-                      <div class="marzo_sur_P_3_D_2 container-departamento">
+                        <div class="marzo_sur_P_4_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_03-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="marzo_sur_P_4_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_03-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_04-02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_08.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="marzo_sur_P_3_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_04-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_09.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
+
+                        <div class="marzo_sur_P_3_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_04-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
                         </div>
-                      </div>
+                        <div class="marzo_sur_P_3_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_04-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+                        <div class="marzo_sur_P_3_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_04-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
 
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_10.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_11.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_sur_P_2_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_05-01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_10.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="marzo_sur_P_2_D_2 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_05-02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_11.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
 
-                      <div class="marzo_sur_P_2_D_3 container-departamento">
+                        <div class="marzo_sur_P_2_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_05-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="marzo_sur_P_2_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_05-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="marzo_sur_P_2_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_05-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_05-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_12.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_12.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_13.png"
-                        alt=""
-                      />
-
-                      <div class="marzo_sur_P_1_D_1 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_06-01.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_13.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
 
-                      <div class="marzo_sur_P_1_D_2 container-departamento">
+                        <div class="marzo_sur_P_1_D_1 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_06-01.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="marzo_sur_P_1_D_2 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_06-02.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
+                        <div class="marzo_sur_P_1_D_3 container-departamento">
+                          <img
+                            src="images/departamentos-sur/FachadaNorte_06-03.png"
+                            alt=""
+                          />
+                          <div class="container-status"></div>
+                        </div>
+
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_06-02.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_14.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="marzo_sur_P_1_D_3 container-departamento">
                         <img
-                          src="../images/departamentos-sur/FachadaNorte_06-03.png"
+                          src="images/departamentos-sur/FachadaNorteLateral_15.png"
                           alt=""
                         />
-                        <div class="container-status">
-                          <p></p>
-                        </div>
+
+                        <img
+                          src="images/departamentos-sur/FachadaNorte_07-01.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-sur/FachadaNorte_07-02.png"
+                          alt=""
+                        />
+                        <img
+                          src="images/departamentos-sur/FachadaNorte_07-03.png"
+                          alt=""
+                        />
+
+                        <img
+                          src="images/departamentos-sur/FachadaNorteLateral_16.png"
+                          alt=""
+                        />
                       </div>
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_14.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_15.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_07-01.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_07-02.png"
-                        alt=""
-                      />
-                      <img
-                        src="../images/departamentos-sur/FachadaNorte_07-03.png"
-                        alt=""
-                      />
-
-                      <img
-                        src="../images/departamentos-sur/FachadaNorteLateral_16.png"
-                        alt=""
-                      />
                     </div>
                   </section>
-                </div>
+                </article>
 
                 <div class="subtitle-box">
                   <p>Descubre tu nuevo departamento</p>
@@ -3540,12 +3714,13 @@
       src="js/oceanviewsisalmerida-b5e1b6d83aeb5a614d.js"
       type="text/javascript"
     ></script>
-    <script type="module" src="js/addDataEneroNorte.js" defer></script>
+    <script type="module" src="js/addDataEneroNorte.js"></script>
     <script type="module" src="js/addDataEneroSur.js"></script>
     <script type="module" src="js/addDataFebreroNorte.js"></script>
     <script type="module" src="js/addDataFebreroSur.js"></script>
     <script type="module" src="js/addDataMarzoNorte.js"></script>
     <script type="module" src="js/addDataMarzoSur.js"></script>
     <script src="js/router.js"></script>
+    <script type="module" src="js/clickDepart.js"></script>
   </body>
 </html>

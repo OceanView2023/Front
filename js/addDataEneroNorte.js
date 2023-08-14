@@ -90,6 +90,27 @@ if (enero_norte_P_1_D_3.status !== "Disponible") {
   enero_norte_p_1_d_3Div.appendChild(unidad_enero);
   enero_norte_p_1_d_3Div.appendChild(precio_enero);
 }
+// document.addEventListener("DOMContentLoaded", function () {
+//   const modal = document.getElementById("modal");
+//   const closeModalButton = document.getElementById("closeModalButton");
+
+//   // Abrir el modal al hacer clic en el botón
+//   enero_norte_p_1_d_3.addEventListener("click", function () {
+//     modal.style.display = "block";
+//   });
+
+//   // Cerrar el modal al hacer clic en el botón de cierre
+//   closeModalButton.addEventListener("click", function () {
+//     modal.style.display = "none";
+//   });
+
+//   // Cerrar el modal si se hace clic fuera del contenido del modal
+//   window.addEventListener("click", function (event) {
+//     if (event.target === modal) {
+//       modal.style.display = "none";
+//     }
+//   });
+// });
 
 // segundo piso
 const enero_norte_p_2_d_1 = document.querySelector(".enero_norte_P_2_D_1");
