@@ -252,25 +252,20 @@ function clickDepart(event) {
       const areaCotizador = document.getElementById("area-cotizador");
       const precioCotizador = document.getElementById("precio-cotizador");
       const valorInput = document.getElementById("enganche-valor");
-      const valorSin$ = contenidoVariable.precio.replace(/\$|,/g, "");
-      const precioNumber = parseFloat(valorSin$.replace(/[^0-9.-]+/g, ""));
-      if (!isNaN(precioNumber)) {
-        const numeroFormateado = precioNumber.toLocaleString("es-MX", {
+
+      const numeroFormateado = contenidoVariable.precio.toLocaleString(
+        "es-MX",
+        {
           style: "currency",
           currency: "MXN",
-        });
-
-        valorInput.value = numeroFormateado;
-        console.log(numeroFormateado);
-      } else {
-        console.error(
-          "No se pudo convertir el valor a un número válido:",
-          valor
-        );
-      }
+        }
+      );
+      valorInput.value = numeroFormateado;
       unidadCotizador.innerHTML = contenidoVariable.apto;
       areaCotizador.innerHTML = contenidoVariable.metros;
-      precioCotizador.innerHTML = contenidoVariable.precio;
+      precioCotizador.innerHTML = "$ " + contenidoVariable.precio;
+      const modal = document.getElementById("modal-cotizador");
+      modal.style.display = "block";
     }
   }
 }

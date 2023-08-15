@@ -5,7 +5,7 @@
 const marzo_sur_P_1_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -14,7 +14,7 @@ const marzo_sur_P_1_D_1 = {
 const marzo_sur_P_1_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -22,7 +22,7 @@ const marzo_sur_P_1_D_2 = {
 const marzo_sur_P_1_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -32,7 +32,7 @@ const marzo_sur_P_1_D_3 = {
 const marzo_sur_P_2_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -40,7 +40,7 @@ const marzo_sur_P_2_D_1 = {
 const marzo_sur_P_2_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -48,7 +48,7 @@ const marzo_sur_P_2_D_2 = {
 const marzo_sur_P_2_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -58,7 +58,7 @@ const marzo_sur_P_2_D_3 = {
 const marzo_sur_P_3_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -66,7 +66,7 @@ const marzo_sur_P_3_D_1 = {
 const marzo_sur_P_3_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -74,7 +74,7 @@ const marzo_sur_P_3_D_2 = {
 const marzo_sur_P_3_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -84,7 +84,7 @@ const marzo_sur_P_3_D_3 = {
 const marzo_sur_P_4_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -92,7 +92,7 @@ const marzo_sur_P_4_D_1 = {
 const marzo_sur_P_4_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -100,7 +100,7 @@ const marzo_sur_P_4_D_2 = {
 const marzo_sur_P_4_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -110,7 +110,7 @@ const marzo_sur_P_4_D_3 = {
 const marzo_sur_P_5_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -118,7 +118,7 @@ const marzo_sur_P_5_D_1 = {
 const marzo_sur_P_5_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -126,7 +126,7 @@ const marzo_sur_P_5_D_2 = {
 const marzo_sur_P_5_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -136,7 +136,7 @@ const marzo_sur_P_5_D_3 = {
 const marzo_sur_P_6_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -144,7 +144,7 @@ const marzo_sur_P_6_D_1 = {
 const marzo_sur_P_6_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
@@ -152,7 +152,7 @@ const marzo_sur_P_6_D_2 = {
 const marzo_sur_P_6_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
-  precio: "$122,333.00",
+  precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },

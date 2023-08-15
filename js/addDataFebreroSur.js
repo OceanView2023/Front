@@ -32,7 +32,7 @@ if (febrero_sur_P_1_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_1_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_1_D_1.unidad;
 
   febrero_sur_p_1_d_1Div.appendChild(status_febrero);
   febrero_sur_p_1_d_1Div.appendChild(unidad_febrero);
@@ -43,11 +43,11 @@ if (febrero_sur_P_1_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_1_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_1_D_1.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_1_D_1.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_1_D_1.precio;
   febrero_sur_p_1_d_1Div.appendChild(status_febrero);
   febrero_sur_p_1_d_1Div.appendChild(unidad_febrero);
   febrero_sur_p_1_d_1Div.appendChild(precio_febrero);
@@ -70,7 +70,7 @@ if (febrero_sur_P_1_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_1_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_1_D_3.unidad;
 
   febrero_sur_p_1_d_3Div.appendChild(status_febrero);
   febrero_sur_p_1_d_3Div.appendChild(unidad_febrero);
@@ -81,11 +81,11 @@ if (febrero_sur_P_1_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_1_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_1_D_3.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_1_D_3.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_1_D_3.precio;
   febrero_sur_p_1_d_3Div.appendChild(status_febrero);
   febrero_sur_p_1_d_3Div.appendChild(unidad_febrero);
   febrero_sur_p_1_d_3Div.appendChild(precio_febrero);
@@ -104,7 +104,7 @@ if (febrero_sur_P_2_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_2_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_2_D_1.unidad;
 
   febrero_sur_p_2_d_1Div.appendChild(status_febrero);
   febrero_sur_p_2_d_1Div.appendChild(unidad_febrero);
@@ -115,11 +115,11 @@ if (febrero_sur_P_2_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_2_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_2_D_1.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_2_D_1.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_2_D_1.precio;
   febrero_sur_p_2_d_1Div.appendChild(status_febrero);
   febrero_sur_p_2_d_1Div.appendChild(unidad_febrero);
   febrero_sur_p_2_d_1Div.appendChild(precio_febrero);
@@ -137,7 +137,7 @@ if (febrero_sur_P_2_D_2.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_2_D_2.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_2_D_2.unidad;
 
   febrero_sur_p_2_d_2Div.appendChild(status_febrero);
   febrero_sur_p_2_d_2Div.appendChild(unidad_febrero);
@@ -148,11 +148,11 @@ if (febrero_sur_P_2_D_2.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_2_D_2.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_2_D_2.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_2_D_2.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_2_D_2.precio;
   febrero_sur_p_2_d_2Div.appendChild(status_febrero);
   febrero_sur_p_2_d_2Div.appendChild(unidad_febrero);
   febrero_sur_p_2_d_2Div.appendChild(precio_febrero);
@@ -170,7 +170,7 @@ if (febrero_sur_P_2_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_2_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_2_D_3.unidad;
 
   febrero_sur_p_2_d_3Div.appendChild(status_febrero);
   febrero_sur_p_2_d_3Div.appendChild(unidad_febrero);
@@ -181,11 +181,11 @@ if (febrero_sur_P_2_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_2_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_2_D_3.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_2_D_3.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_2_D_3.precio;
   febrero_sur_p_2_d_3Div.appendChild(status_febrero);
   febrero_sur_p_2_d_3Div.appendChild(unidad_febrero);
   febrero_sur_p_2_d_3Div.appendChild(precio_febrero);
@@ -204,7 +204,7 @@ if (febrero_sur_P_3_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_3_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_3_D_1.unidad;
 
   febrero_sur_p_3_d_1Div.appendChild(status_febrero);
   febrero_sur_p_3_d_1Div.appendChild(unidad_febrero);
@@ -215,11 +215,11 @@ if (febrero_sur_P_3_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_3_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_3_D_1.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_3_D_1.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_3_D_1.precio;
   febrero_sur_p_3_d_1Div.appendChild(status_febrero);
   febrero_sur_p_3_d_1Div.appendChild(unidad_febrero);
   febrero_sur_p_3_d_1Div.appendChild(precio_febrero);
@@ -237,7 +237,7 @@ if (febrero_sur_P_3_D_2.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_3_D_2.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_3_D_2.unidad;
 
   febrero_sur_p_3_d_2Div.appendChild(status_febrero);
   febrero_sur_p_3_d_2Div.appendChild(unidad_febrero);
@@ -248,11 +248,11 @@ if (febrero_sur_P_3_D_2.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_3_D_2.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_3_D_2.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_3_D_2.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_3_D_2.precio;
   febrero_sur_p_3_d_2Div.appendChild(status_febrero);
   febrero_sur_p_3_d_2Div.appendChild(unidad_febrero);
   febrero_sur_p_3_d_2Div.appendChild(precio_febrero);
@@ -270,7 +270,7 @@ if (febrero_sur_P_3_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_3_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_3_D_3.unidad;
 
   febrero_sur_p_3_d_3Div.appendChild(status_febrero);
   febrero_sur_p_3_d_3Div.appendChild(unidad_febrero);
@@ -281,11 +281,11 @@ if (febrero_sur_P_3_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_3_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_3_D_3.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_3_D_3.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_3_D_3.precio;
   febrero_sur_p_3_d_3Div.appendChild(status_febrero);
   febrero_sur_p_3_d_3Div.appendChild(unidad_febrero);
   febrero_sur_p_3_d_3Div.appendChild(precio_febrero);
@@ -304,7 +304,7 @@ if (febrero_sur_P_4_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_4_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_4_D_1.unidad;
 
   febrero_sur_p_4_d_1Div.appendChild(status_febrero);
   febrero_sur_p_4_d_1Div.appendChild(unidad_febrero);
@@ -315,11 +315,11 @@ if (febrero_sur_P_4_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_4_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_4_D_1.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_4_D_1.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_4_D_1.precio;
   febrero_sur_p_4_d_1Div.appendChild(status_febrero);
   febrero_sur_p_4_d_1Div.appendChild(unidad_febrero);
   febrero_sur_p_4_d_1Div.appendChild(precio_febrero);
@@ -337,7 +337,7 @@ if (febrero_sur_P_4_D_2.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_4_D_2.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_4_D_2.unidad;
 
   febrero_sur_p_4_d_2Div.appendChild(status_febrero);
   febrero_sur_p_4_d_2Div.appendChild(unidad_febrero);
@@ -348,11 +348,11 @@ if (febrero_sur_P_4_D_2.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_4_D_2.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_4_D_2.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_4_D_2.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_4_D_2.precio;
   febrero_sur_p_4_d_2Div.appendChild(status_febrero);
   febrero_sur_p_4_d_2Div.appendChild(unidad_febrero);
   febrero_sur_p_4_d_2Div.appendChild(precio_febrero);
@@ -370,7 +370,7 @@ if (febrero_sur_P_4_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_4_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_4_D_3.unidad;
 
   febrero_sur_p_4_d_3Div.appendChild(status_febrero);
   febrero_sur_p_4_d_3Div.appendChild(unidad_febrero);
@@ -381,11 +381,11 @@ if (febrero_sur_P_4_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_4_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_4_D_3.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_4_D_3.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_4_D_3.precio;
   febrero_sur_p_4_d_3Div.appendChild(status_febrero);
   febrero_sur_p_4_d_3Div.appendChild(unidad_febrero);
   febrero_sur_p_4_d_3Div.appendChild(precio_febrero);
@@ -404,7 +404,7 @@ if (febrero_sur_P_5_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_5_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_5_D_1.unidad;
 
   febrero_sur_p_5_d_1Div.appendChild(status_febrero);
   febrero_sur_p_5_d_1Div.appendChild(unidad_febrero);
@@ -415,11 +415,11 @@ if (febrero_sur_P_5_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_5_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_5_D_1.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_5_D_1.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_5_D_1.precio;
   febrero_sur_p_5_d_1Div.appendChild(status_febrero);
   febrero_sur_p_5_d_1Div.appendChild(unidad_febrero);
   febrero_sur_p_5_d_1Div.appendChild(precio_febrero);
@@ -437,7 +437,7 @@ if (febrero_sur_P_5_D_2.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_5_D_2.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_5_D_2.unidad;
 
   febrero_sur_p_5_d_2Div.appendChild(status_febrero);
   febrero_sur_p_5_d_2Div.appendChild(unidad_febrero);
@@ -448,11 +448,11 @@ if (febrero_sur_P_5_D_2.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_5_D_2.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_5_D_2.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_5_D_2.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_5_D_2.precio;
   febrero_sur_p_5_d_2Div.appendChild(status_febrero);
   febrero_sur_p_5_d_2Div.appendChild(unidad_febrero);
   febrero_sur_p_5_d_2Div.appendChild(precio_febrero);
@@ -470,7 +470,7 @@ if (febrero_sur_P_5_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_5_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_5_D_3.unidad;
 
   febrero_sur_p_5_d_3Div.appendChild(status_febrero);
   febrero_sur_p_5_d_3Div.appendChild(unidad_febrero);
@@ -481,11 +481,11 @@ if (febrero_sur_P_5_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_5_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_5_D_3.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_5_D_3.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_5_D_3.precio;
   febrero_sur_p_5_d_3Div.appendChild(status_febrero);
   febrero_sur_p_5_d_3Div.appendChild(unidad_febrero);
   febrero_sur_p_5_d_3Div.appendChild(precio_febrero);
@@ -504,7 +504,7 @@ if (febrero_sur_P_6_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_6_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_6_D_1.unidad;
 
   febrero_sur_p_6_d_1Div.appendChild(status_febrero);
   febrero_sur_p_6_d_1Div.appendChild(unidad_febrero);
@@ -515,11 +515,11 @@ if (febrero_sur_P_6_D_1.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_6_D_1.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_6_D_1.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_6_D_1.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_6_D_1.precio;
   febrero_sur_p_6_d_1Div.appendChild(status_febrero);
   febrero_sur_p_6_d_1Div.appendChild(unidad_febrero);
   febrero_sur_p_6_d_1Div.appendChild(precio_febrero);
@@ -537,7 +537,7 @@ if (febrero_sur_P_6_D_2.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_6_D_2.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_6_D_2.unidad;
 
   febrero_sur_p_6_d_2Div.appendChild(status_febrero);
   febrero_sur_p_6_d_2Div.appendChild(unidad_febrero);
@@ -548,11 +548,11 @@ if (febrero_sur_P_6_D_2.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_6_D_2.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_6_D_2.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_6_D_2.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_6_D_2.precio;
   febrero_sur_p_6_d_2Div.appendChild(status_febrero);
   febrero_sur_p_6_d_2Div.appendChild(unidad_febrero);
   febrero_sur_p_6_d_2Div.appendChild(precio_febrero);
@@ -570,7 +570,7 @@ if (febrero_sur_P_6_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_6_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_6_D_3.unidad;
 
   febrero_sur_p_6_d_3Div.appendChild(status_febrero);
   febrero_sur_p_6_d_3Div.appendChild(unidad_febrero);
@@ -581,11 +581,11 @@ if (febrero_sur_P_6_D_3.status !== "Disponible") {
 
   const unidad_febrero = document.createElement("p");
   unidad_febrero.classList.add("unidad_depart");
-  unidad_febrero.innerHTML = febrero_sur_P_6_D_3.unidad;
+  unidad_febrero.innerHTML = "Unidad: " + febrero_sur_P_6_D_3.unidad;
 
   const precio_febrero = document.createElement("p");
   precio_febrero.classList.add("precio_depart");
-  precio_febrero.innerHTML = febrero_sur_P_6_D_3.precio;
+  precio_febrero.innerHTML = "Precio lista: $" + febrero_sur_P_6_D_3.precio;
   febrero_sur_p_6_d_3Div.appendChild(status_febrero);
   febrero_sur_p_6_d_3Div.appendChild(unidad_febrero);
   febrero_sur_p_6_d_3Div.appendChild(precio_febrero);

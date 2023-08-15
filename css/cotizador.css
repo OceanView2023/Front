@@ -1,14 +1,40 @@
 #modal-cotizador {
-  border: 3px solid red;
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  backdrop-filter: blur(10px) !important;
+}
+.container-cotizador {
+  block-size: 100vh;
+  position: relative;
+  overflow: auto;
+}
+.close-modal {
+  position: absolute;
+  z-index: 20000;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  background: transparent;
+  padding: 0;
+  margin: 8px;
+}
+.close-modal img {
+  block-size: 24px;
+  inline-size: auto;
+}
+
+.cotizador {
+  background: white;
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   text-align: start;
   gap: 8;
-}
-@media screen and (max-width: 1000px) {
-  #modal-cotizador {
-    grid-template-columns: 1fr;
-  }
+  max-inline-size: 1000px;
+  inline-size: 100%;
+  position: absolute;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
 }
 .container-porcentajes label strong span {
   color: red;
@@ -21,7 +47,9 @@
 }
 .container-seccion-1 {
   background: #e9ecef;
-  padding: 16px;
+  padding-inline: 16px;
+  padding-block-end: 16px;
+  padding-block-start: 16px;
 }
 .container-seccion-2 {
   background: #fffffe;
@@ -146,4 +174,65 @@
   padding-inline: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+#modal-cotizador {
+}
+@media screen and (max-width: 1000px) {
+}
+@media screen and (max-width: 1000px) {
+  .cotizador {
+    grid-template-columns: 1fr;
+  }
+  .container-seccion-1 {
+    background: #e9ecef;
+    padding-inline: 16px;
+    padding-block-end: 16px;
+    padding-block-start: 40px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #modal-cotizador .container-seccion-1 {
+    /* text-align: center; */
+  }
+
+  #modal-cotizador .descargar-plano-ilustrativo {
+    /* inline-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    /* display: block;
+    margin-inline: auto; */
+  }
+  /* #modal-cotizador .descargar-plano-ilustrativo img,
+  #modal-cotizador .descargar-plano-ilustrativo p {
+    margin: 0;
+  } */
+  .container-porcentajes {
+    gap: 30px;
+  }
+  .container-porcentajes label {
+    grid-template-columns: 1fr;
+  }
+  .container-porcentajes label section {
+    gap: 8px;
+  }
+  .container-porcentajes strong {
+    /* text-align: center; */
+  }
+  .container-person .names-cotizador,
+  .container-person .contact-cotizador {
+    grid-template-columns: 1fr;
+  }
+  #modal-cotizador .container-input-cotizador span {
+    padding-inline: 4px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cotizador {
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

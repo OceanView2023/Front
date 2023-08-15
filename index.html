@@ -803,6 +803,11 @@
                 <h2 class="h2">Master Plan</h2>
 
                 <section id="modal-cotizador">
+                    <button id="close-modal" class="close-modal">
+                        <img src="/images/icon-close.svg" alt="Cerrar modal" height="100" width="100">
+                    </button>
+                    <div class="container-cotizador">
+                    <section class="cotizador">
                   <section class="container-seccion-1">
                     <h3>Moneda desarrollo</h3>
                     <p>M.N.</p>
@@ -813,7 +818,7 @@
                     <h3>Precio por lista</h3>
                     <p id="precio-cotizador"></p>
                     <button class="descargar-plano-ilustrativo">
-                      Plano ilustrativo
+                            Plano ilustrativo
                       <img
                         src="/images/icon-descargar.svg"
                         alt="Descargar plano ilustrativo"
@@ -886,7 +891,7 @@
                                 class="accesible"
                                 value=""
                                 class="enganche"
-                                type="number"
+                                type="text"
                                 name="enganche"
                                 id="enganche"
                                 placeholder="Porcentaje"
@@ -899,7 +904,7 @@
                                 class="accesible"
                                 value=""
                                 class="enganche-valor"
-                                type="number"
+                                type="text"
                                 name="enganche-valor"
                                 id="enganche-valor"
                                 placeholder="Valor"
@@ -1041,6 +1046,8 @@
                         </button>
                       </section>
                     </form>
+                  </section>
+                  </div>
                   </section>
                 </section>
 
@@ -3722,5 +3729,6 @@
     <script type="module" src="js/addDataMarzoSur.js"></script>
     <script src="js/router.js"></script>
     <script type="module" src="js/clickDepart.js"></script>
+    <script src="js/closeModal.js"></script>
   </body>
 </html>
