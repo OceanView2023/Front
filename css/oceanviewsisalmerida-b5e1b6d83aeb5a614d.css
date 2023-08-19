@@ -416,7 +416,7 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  display: none;
+  display: none !important;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -631,7 +631,7 @@ a {
   color: #6e7a73;
   background-color: #d4d5cf;
   background-image: url("../images/User_1User.png");
-  background-position: 21%;
+  background-position: 15%;
   background-repeat: no-repeat;
   background-size: 13px;
   border-radius: 90px;
@@ -646,7 +646,26 @@ a {
 .login:hover {
   background-color: #caccc1;
 }
-
+.translateButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  block-size: 2rem;
+  inline-size: 2rem;
+  background: #d4d5cf;
+}
+.container-navigation-translate {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 990px) {
+  .container-navigation-translate {
+    gap: 1rem;
+  }
+}
 .nav-dropdown {
   height: 80px;
   margin-right: 3px;
@@ -2420,6 +2439,7 @@ a {
 }
 
 .subtitle-box {
+  padding-block-start: 2rem;
   max-width: 410px;
   margin-left: auto;
   margin-right: auto;
@@ -3328,8 +3348,7 @@ a {
 .field {
   width: 49%;
   height: 40px;
-  color: #abb5b8;
-  background-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
   border: 1px solid #b6b9af;
   border-radius: 0;
   margin-bottom: 0;

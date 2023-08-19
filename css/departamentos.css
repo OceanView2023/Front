@@ -18,25 +18,33 @@
 .diciembre-tab {
   background: #e68880;
 }
-.laguna {
+.laguna .container-vista {
   background: #e68880;
 }
-.mar {
+.mar .container-vista {
   background: #afd3c5;
 }
-.container-mes .container-vista {
+.container-vista {
+  padding-block: 1rem;
+  font-size: 3rem;
+}
+.container-vista p {
+  font-size: 1.6rem;
+  color: rgb(0, 0, 0, 0.7);
+  font-weight: 700;
 }
 
 .container-mes p {
   margin: 0;
-  padding-block: 8px;
+  /* padding-block: 8px; */
 }
 .container-mes-tab {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   cursor: pointer;
   gap: 3px;
-  margin-block: 4px;
+  margin-block-start: 4px;
+  border-block-end: 1px solid rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 1000px) {
   .container-mes-tab {
@@ -84,12 +92,14 @@
 }
 .container-mes-depart-norte {
   inline-size: 100%;
+  block-size: calc(100% - 2.5rem);
   display: grid;
   grid-template-columns: 8.5995086% 26.7813268% 29.2383292% 26.7813268% 8.5995086%;
   grid-template-rows: auto auto auto auto auto auto auto auto;
 }
 .container-mes-depart-sur {
   inline-size: 100%;
+  block-size: calc(100% - 2.5rem);
   display: grid;
   grid-template-columns: 8.7057457% 26.2913522% 30.1799187% 26.1172373% 8.7057457%;
   grid-template-rows: auto auto auto auto auto auto auto auto;
@@ -132,17 +142,23 @@
 .container-departamento {
   position: relative;
 }
+
+.container-status p {
+  font-size: 1rem;
+}
 .container-status {
-  display: flex;
-  justify-content: center;
+  display: none;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   background-color: white !important;
-  opacity: 0;
-  block-size: 0;
   inline-size: 100%;
+  gap: 0.5rem;
   position: absolute;
   inset-block-end: 100%;
+  padding-block-end: calc(10% + 1rem);
+  padding-inline: 0.3rem;
+  padding-block-start: 1rem;
   clip-path: polygon(
     0% 0%,
     0% 85.56%,
@@ -154,14 +170,12 @@
   );
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 499px) {
   .Disponible:hover .container-status {
-    block-size: 220%;
-    opacity: 1;
+    display: flex;
   }
   .Vendido:hover .container-status,
   .Reservado:hover .container-status {
-    block-size: 150%;
-    opacity: 1;
+    display: flex;
   }
 }

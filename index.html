@@ -96,8 +96,10 @@
                 "
                 alt=""
             /></a>
+
+            <section class="container-navigation-translate">
+                <button class="translateButton" id="translateButton">ES</button>
             <nav role="navigation" class="nav-menu w-nav-menu">
-                <button id="translateButton">Translate</button>
               <a
                 href="index.html"
                 data-w-id="a24742b7-5450-77e2-7714-d6914b1820c2"
@@ -124,7 +126,7 @@
                 <div class="underline"></div>
               </a>
               <div class="login-box">
-                <a href="iniciar-sesion.html" class="login inicia-sesion-en">   Inicia sesión</a>
+                <a href="iniciar-sesion.html" class="login inicia-sesion-en">Iniciar sesión</a>
               </div>
               <a
                 data-w-id="a24742b7-5450-77e2-7714-d6914b1820d9"
@@ -140,6 +142,8 @@
             <div class="menu-button w-nav-button">
               <div class="w-icon-nav-menu"></div>
             </div>
+            </section>
+
           </div>
         </div>
         <div class="preloader">
@@ -184,7 +188,8 @@
                   id="wf-form-Book-Form"
                   name="wf-form-Book-Form"
                   data-name="Book Form"
-                  method="get"
+                  method="post"
+                  action="/contacto"
                   class="contact-form"
                   data-wf-page-id="64a34838cff35ce92468dc38"
                   data-wf-element-id="f6684003-b604-a55c-ced2-07a924da08b3"
@@ -192,7 +197,7 @@
                   <div class="field-label nombre-en">Nombre</div>
                   <input
                     type="text"
-                    class="text-field w-input"
+                    class="text-field w-input nombre-input-en"
                     maxlength="256"
                     name="Nombre"
                     data-name="Nombre"
@@ -203,7 +208,7 @@
                   <div class="field-label correo-electronico-en">Correo electrónico</div>
                   <input
                     type="email"
-                    class="text-field w-input"
+                    class="text-field w-input correo-input-en"
                     maxlength="256"
                     name="Email"
                     data-name="Email"
@@ -214,16 +219,16 @@
                   <div class="field-label mensaje-en">Mensaje</div>
                   <textarea
                     id="field"
-                    name="Message"
+                    name="Mensaje"
                     maxlength="5000"
-                    data-name="Message"
+                    data-name="Mensaje"
                     placeholder="Escribe tu mensaje..."
                     required=""
-                    class="text-field message w-input"
+                    class="text-field message w-input message-input-en" 
                   ></textarea
                   ><input
                     type="submit"
-                    value="ENVAR"
+                    value="ENVIAR"
                     data-wait="Por favor, espera..."
                     class="form-button w-button enviar-en"
                   />
@@ -473,7 +478,7 @@
                     <div class="hero-price">$468,187</div>
                     <div class="currency">MXN</div>
                   </div>
-                  <a href="contactanos.html adquiere-tu-fraccion-en" class="button-fill w-button"
+                  <a href="contactanos.html" class="button-fill w-button adquiere-tu-fraccion-en"
                     >ADQUIERE TU Fracción</a
                   >
                 </div>
@@ -548,7 +553,7 @@
                         class="hero-icons"
                       />
                     </div>
-                    <div class="hero-mini-text exclusivas-visitas-al-mar">
+                    <div class="hero-mini-text exclusivas-visitas-al-mar-en">
                       Exclusivas vistas al mar<br />
                     </div>
                   </div>
@@ -576,7 +581,7 @@
                         class="hero-icons"
                       />
                     </div>
-                    <div class="hero-mini-text Concierge-en">Concierge<br />24 horas</div>
+                    <div class="hero-mini-text concierge-en">Concierge<br />24 horas</div>
                   </div>
                 </div>
               </div>
@@ -608,8 +613,8 @@
           <div class="heading-center">
             <address>
               <div class="title-all-caps descubre-en">DESCUBRE EL PARAÍSO AQUÍ</div>
-              <h2 class="h2 lujo-exclusivo-en">
-                <strong>OceanView Sisal, </strong>lujo exclusivo frente al
+              <h2 class="h2">
+                <strong>OceanView Sisal, </strong class="lujo-exclusivo-en">lujo exclusivo frente al
                 mar.<br />
               </h2>
             </address>
@@ -630,7 +635,7 @@
                 <div class="title-big lujo-en">Lujo</div>
               </div>
               <div>
-                <p class="fraccion-exclusiva">Tu fracción exclusiva en el paraíso de Sisal.</p>
+                <p class="fraccion-exclusiva-en">Tu fracción exclusiva en el paraíso de Sisal.</p>
               </div>
             </div>
             <div
@@ -742,7 +747,7 @@
                 <h3 class="text-white les-top-margin no-esperes-mas-en">
                   No esperes más para ser parte de esta exclusiva comunidad.
                 </h3>
-                <p class="text-white">
+                <p class="text-white adquiere-tu-accion-hoy-en">
                   Adquiere tu fracción hoy y garantiza la experiencia de tener
                   un departamento de lujo en una de las zonas más atractivas de
                   la Costa Yucateca.<br /><br />Serás propietario los meses de
@@ -812,15 +817,15 @@
                     <div class="container-cotizador">
                     <section class="cotizador">
                   <section class="container-seccion-1">
-                    <h3>Moneda desarrollo</h3>
+                    <h3 class="moneda-desarrollo-en">Moneda desarrollo</h3>
                     <p>M.N.</p>
-                    <h3>Unidad</h3>
+                    <h3 class="unidad-en">Unidad</h3>
                     <p id="unidad-cotizador"></p>
-                    <h3>Área</h3>
+                    <h3 class="area-en">Área</h3>
                     <p id="area-cotizador"></p>
-                    <h3>Precio por lista</h3>
+                    <h3 class="precio-por-lista-en">Precio por lista</h3>
                     <p id="precio-cotizador"></p>
-                    <button class="descargar-plano-ilustrativo plano-exclusivo-en">
+                    <button class="descargar-plano-ilustrativo plano-ilustrativo-en">
                             Plano ilustrativo
                       <img
                         src="/images/icon-descargar.svg"
@@ -847,11 +852,11 @@
                             name="plazo-de-financiamiento"
                             type="checkbox"
                           >
-                            <option value="plazo" class="seleccione-un-pla-enzo">Seleccione un plazo</option>
-                            <option value="enganche" class="10-enganche-en">
+                            <option value="plazo" class="seleccione-un-plazo-en">Seleccione un plazo</option>
+                            <option value="enganche" class="diez-enganche-en">
                               10% Enganche, 15 meses
                             </option>
-                            <option value="contado" class="9-contado">
+                            <option value="contado" class="nueve-contado-en">
                               Contado, 9% de descuento
                             </option>
                           </select>
@@ -1016,7 +1021,7 @@
                             <input
                               type="number"
                               id="telefono-cotizador"
-                              class="telefono-cotizador"
+                              class="telefono-cotizador telefono-input-en"
                               placeholder="Número de teléfono"
                               name="telefono-cotizador"
                             />
@@ -1039,9 +1044,9 @@
                           <textarea
                             type="text"
                             id="message-cotizador"
-                            class="message-cotizador escribe-un-comentario-en"
+                            class="message-cotizador comentario-en"
                             placeholder="Escribe un comentario"
-                            name="message-cotizador"
+                            name="Mensaje"
                             rows="4"
                           ></textarea>
                         </label>
@@ -2731,7 +2736,7 @@
                 width="50"
                 alt=""
               />
-              <h5 class="h5 piscina-roof">Piscina roof panorámica</h5>
+              <h5 class="h5 piscina-roof-en">Piscina roof panorámica</h5>
             </div>
             <div
               data-w-id="90e392f1-1d7b-bc2f-164b-5b88b9d4d6c5"
@@ -2806,7 +2811,7 @@
           <div class="heading-center">
             <div class="title-all-caps servicios-en">SERVICIOS</div>
             <div>
-              <h2 class="h2 los-mejores-servicios-en">Los mejores servicios</h2>
+              <h2 class="h2 mejores-servicios-en">Los mejores servicios</h2>
             </div>
           </div>
           <div>
@@ -2846,7 +2851,7 @@
                       class="amenity-image"
                     />
                     <div>
-                      <div class="title-all-caps concierge-365">
+                      <div class="title-all-caps concierge-dias-año-en">
                         Concierge 365 días del año
                       </div>
                     </div>
@@ -2979,7 +2984,7 @@
               <h3 class="text-white les-top-margin las-mejores-comodidades-en">
                 Las mejores comodidades en Sisal
               </h3>
-              <p class="text-white la-residencia-se-entrega">
+              <p class="text-white la-residencia-se-entrega-en">
                 La residencia se entrega completamente amueblada, equipada y con
                 los gastos de escrituración incluidos, para que puedas disfrutar
                 de ella desde el primer momento.
@@ -3034,7 +3039,7 @@
           <div class="heading-center">
             <div class="title-all-caps descubre-tu-fraccion-en">DESCUBRE TU fracción</div>
             <div>
-              <h3 class="h3 planes-comerciales">Planes comerciales</h3>
+              <h3 class="h3 planes-comerciales-en">Planes comerciales</h3>
             </div>
             <div class="subtitle-box">
               <p class="texto-en">Texto</p>
@@ -3084,7 +3089,7 @@
                       class="checkmark"
                     />
                   </div>
-                  <div class="pricing-description 118-interiores-en">118.30m2 interiores</div>
+                  <div class="pricing-description diesciocho-interiores-en">118.30m2 interiores</div>
                 </div>
                 <div class="pricing-description-wrapper">
                   <div class="checkmark-wrapper">
@@ -3095,7 +3100,7 @@
                       class="checkmark"
                     />
                   </div>
-                  <div class="pricing-description 2-recamaras-en">2 recámaras + Flex</div>
+                  <div class="pricing-description recamaras-flex-en">2 recámaras + Flex</div>
                 </div>
                 <div class="pricing-description-wrapper">
                   <div class="checkmark-wrapper">
@@ -3106,7 +3111,7 @@
                       class="checkmark"
                     />
                   </div>
-                  <div class="pricing-description 2-baños-en">2 baños y medio<br /></div>
+                  <div class="pricing-description dos-baños-en">2 baños y medio<br /></div>
                 </div>
                 <div class="pricing-description-wrapper">
                   <div class="checkmark-wrapper">
@@ -3189,7 +3194,7 @@
                       class="checkmark"
                     />
                   </div>
-                  <div class="pricing-description 137-interiores-en">137.77 m2 interiores</div>
+                  <div class="pricing-description trece-interiores-en">137.77 m2 interiores</div>
                 </div>
                 <div class="pricing-description-wrapper">
                   <div class="checkmark-wrapper">
@@ -3200,7 +3205,7 @@
                       class="checkmark"
                     />
                   </div>
-                  <div class="pricing-description 3-recamaras-en">3 recámaras</div>
+                  <div class="pricing-description tres-recamaras-en">3 recámaras</div>
                 </div>
                 <div class="pricing-description-wrapper">
                   <div class="checkmark-wrapper">
@@ -3211,7 +3216,7 @@
                       class="checkmark"
                     />
                   </div>
-                  <div class="pricing-description 3-baños-en">3 baños</div>
+                  <div class="pricing-description tres-baños-en">3 baños</div>
                 </div>
                 <div class="pricing-description-wrapper">
                   <div class="checkmark-wrapper">
@@ -3296,7 +3301,7 @@
                       class="checkmark"
                     />
                   </div>
-                  <div class="pricing-description 182-interiores-en">
+                  <div class="pricing-description interiores-exteriores-en">
                     182.80 m2 interiores + 57.37m2 exteriores de roof top
                   </div>
                 </div>
@@ -3331,7 +3336,7 @@
                       class="checkmark"
                     />
                   </div>
-                  <div class="pricing-description terraza-de-23-en">Terraza de 23.26m2</div>
+                  <div class="pricing-description terraza-de-en">Terraza de 23.26m2</div>
                 </div>
                 <div class="pricing-description-wrapper">
                   <div class="checkmark-wrapper">

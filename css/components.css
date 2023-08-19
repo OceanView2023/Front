@@ -46,6 +46,16 @@
 html {
   height: 100%;
 }
+
+:root {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    font-size: 14px;
+  }
+}
 body {
   margin: 0;
   min-height: 100%;
@@ -1680,7 +1690,7 @@ textarea.w-select {
   display: none;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  -tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
