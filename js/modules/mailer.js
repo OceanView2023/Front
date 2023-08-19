@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+const KEY_GOOGLE = process.env.KEY_GOOGLE;
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -7,7 +8,7 @@ const transporter = nodemailer.createTransport({
   secure: false,
   auth: {
     user: "ocean.viewjob2023@gmail.com",
-    pass: "acuyfcwbrpfmdleb",
+    pass: KEY_GOOGLE,
   },
 });
 
