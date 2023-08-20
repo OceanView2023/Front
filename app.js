@@ -6,7 +6,7 @@ require("dotenv").config();
 const port = process.env.PORT;
 const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
-const { transporter } = require("./js/modules/mailer.js");
+const { transporter } = require("./src/js/modules/mailer.js");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
@@ -33,5 +33,6 @@ app.post("/contacto", async (req, res) => {
 });
 
 app.listen(port, () => {
+  console.clear();
   console.log(`Servidor en funcionamiento en http://localhost:${port}`);
 });
