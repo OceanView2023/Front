@@ -38,7 +38,7 @@ const febrero_sur_P_2_D_1 = {
   },
 };
 const febrero_sur_P_2_D_2 = {
-  status: "Reservado",
+  status: "Disponible",
   metros: "123.344m²",
   precio: "122,333.00",
   get unidad() {
@@ -56,7 +56,7 @@ const febrero_sur_P_2_D_3 = {
 
 // Tercer piso
 const febrero_sur_P_3_D_1 = {
-  status: "Reservado",
+  status: "Vendido",
   metros: "123.344m²",
   precio: "122,333.00",
   get unidad() {

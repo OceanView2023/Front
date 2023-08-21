@@ -98,7 +98,7 @@ const marzo_norte_P_4_D_2 = {
   },
 };
 const marzo_norte_P_4_D_3 = {
-  status: "Reservado",
+  status: "Disponible",
   metros: "123.344m²",
   precio: "122,333.00",
   get unidad() {
@@ -124,7 +124,7 @@ const marzo_norte_P_5_D_2 = {
   },
 };
 const marzo_norte_P_5_D_3 = {
-  status: "Reservado",
+  status: "Vendido",
   metros: "123.344m²",
   precio: "122,333.00",
   get unidad() {

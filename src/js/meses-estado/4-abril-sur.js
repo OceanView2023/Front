@@ -2,8 +2,8 @@
 // D = Departamento
 
 // Primer piso
-const febrero_norte_P_1_D_1 = {
-  status: "Reservado",
+const abril_sur_P_1_D_1 = {
+  status: "Vendido",
   metros: "123.344m²",
   precio: "122,333.00",
   get unidad() {
@@ -11,7 +11,7 @@ const febrero_norte_P_1_D_1 = {
   },
 };
 
-const febrero_norte_P_1_D_2 = {
+const abril_sur_P_1_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -19,7 +19,7 @@ const febrero_norte_P_1_D_2 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_1_D_3 = {
+const abril_sur_P_1_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -29,7 +29,15 @@ const febrero_norte_P_1_D_3 = {
 };
 
 // Segundo piso
-const febrero_norte_P_2_D_1 = {
+const abril_sur_P_2_D_1 = {
+  status: "Disponible",
+  metros: "123.344m²",
+  precio: "122,333.00",
+  get unidad() {
+    return "14 - " + this.metros;
+  },
+};
+const abril_sur_P_2_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -37,15 +45,7 @@ const febrero_norte_P_2_D_1 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_2_D_2 = {
-  status: "Reservado",
-  metros: "123.344m²",
-  precio: "122,333.00",
-  get unidad() {
-    return "14 - " + this.metros;
-  },
-};
-const febrero_norte_P_2_D_3 = {
+const abril_sur_P_2_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -55,7 +55,7 @@ const febrero_norte_P_2_D_3 = {
 };
 
 // Tercer piso
-const febrero_norte_P_3_D_1 = {
+const abril_sur_P_3_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -63,7 +63,7 @@ const febrero_norte_P_3_D_1 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_3_D_2 = {
+const abril_sur_P_3_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -71,7 +71,7 @@ const febrero_norte_P_3_D_2 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_3_D_3 = {
+const abril_sur_P_3_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -81,7 +81,7 @@ const febrero_norte_P_3_D_3 = {
 };
 
 // Cuarto piso
-const febrero_norte_P_4_D_1 = {
+const abril_sur_P_4_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -89,7 +89,7 @@ const febrero_norte_P_4_D_1 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_4_D_2 = {
+const abril_sur_P_4_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -97,7 +97,7 @@ const febrero_norte_P_4_D_2 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_4_D_3 = {
+const abril_sur_P_4_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -107,7 +107,7 @@ const febrero_norte_P_4_D_3 = {
 };
 
 // Quinto piso
-const febrero_norte_P_5_D_1 = {
+const abril_sur_P_5_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -115,15 +115,15 @@ const febrero_norte_P_5_D_1 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_5_D_2 = {
-  status: "Disponible",
+const abril_sur_P_5_D_2 = {
+  status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_5_D_3 = {
+const abril_sur_P_5_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -133,15 +133,7 @@ const febrero_norte_P_5_D_3 = {
 };
 
 // Sexto piso
-const febrero_norte_P_6_D_1 = {
-  status: "Vendido",
-  metros: "123.344m²",
-  precio: "122,333.00",
-  get unidad() {
-    return "14 - " + this.metros;
-  },
-};
-const febrero_norte_P_6_D_2 = {
+const abril_sur_P_6_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -149,7 +141,15 @@ const febrero_norte_P_6_D_2 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_6_D_3 = {
+const abril_sur_P_6_D_2 = {
+  status: "Reservado",
+  metros: "123.344m²",
+  precio: "122,333.00",
+  get unidad() {
+    return "14 - " + this.metros;
+  },
+};
+const abril_sur_P_6_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -159,22 +159,22 @@ const febrero_norte_P_6_D_3 = {
 };
 
 export {
-  febrero_norte_P_1_D_1,
-  febrero_norte_P_1_D_2,
-  febrero_norte_P_1_D_3,
-  febrero_norte_P_2_D_1,
-  febrero_norte_P_2_D_2,
-  febrero_norte_P_2_D_3,
-  febrero_norte_P_3_D_1,
-  febrero_norte_P_3_D_2,
-  febrero_norte_P_3_D_3,
-  febrero_norte_P_4_D_1,
-  febrero_norte_P_4_D_2,
-  febrero_norte_P_4_D_3,
-  febrero_norte_P_5_D_1,
-  febrero_norte_P_5_D_2,
-  febrero_norte_P_5_D_3,
-  febrero_norte_P_6_D_1,
-  febrero_norte_P_6_D_2,
-  febrero_norte_P_6_D_3,
+  abril_sur_P_1_D_1,
+  abril_sur_P_1_D_2,
+  abril_sur_P_1_D_3,
+  abril_sur_P_2_D_1,
+  abril_sur_P_2_D_2,
+  abril_sur_P_2_D_3,
+  abril_sur_P_3_D_1,
+  abril_sur_P_3_D_2,
+  abril_sur_P_3_D_3,
+  abril_sur_P_4_D_1,
+  abril_sur_P_4_D_2,
+  abril_sur_P_4_D_3,
+  abril_sur_P_5_D_1,
+  abril_sur_P_5_D_2,
+  abril_sur_P_5_D_3,
+  abril_sur_P_6_D_1,
+  abril_sur_P_6_D_2,
+  abril_sur_P_6_D_3,
 };

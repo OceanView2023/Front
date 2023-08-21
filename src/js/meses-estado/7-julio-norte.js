@@ -2,7 +2,7 @@
 // D = Departamento
 
 // Primer piso
-const febrero_norte_P_1_D_1 = {
+const julio_norte_P_1_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -11,7 +11,7 @@ const febrero_norte_P_1_D_1 = {
   },
 };
 
-const febrero_norte_P_1_D_2 = {
+const julio_norte_P_1_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -19,7 +19,7 @@ const febrero_norte_P_1_D_2 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_1_D_3 = {
+const julio_norte_P_1_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -29,7 +29,7 @@ const febrero_norte_P_1_D_3 = {
 };
 
 // Segundo piso
-const febrero_norte_P_2_D_1 = {
+const julio_norte_P_2_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -37,7 +37,7 @@ const febrero_norte_P_2_D_1 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_2_D_2 = {
+const julio_norte_P_2_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -45,7 +45,7 @@ const febrero_norte_P_2_D_2 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_2_D_3 = {
+const julio_norte_P_2_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -55,23 +55,23 @@ const febrero_norte_P_2_D_3 = {
 };
 
 // Tercer piso
-const febrero_norte_P_3_D_1 = {
-  status: "Reservado",
+const julio_norte_P_3_D_1 = {
+  status: "Disponible",
   metros: "123.344m²",
   precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_3_D_2 = {
-  status: "Reservado",
+const julio_norte_P_3_D_2 = {
+  status: "Vendido",
   metros: "123.344m²",
   precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_3_D_3 = {
+const julio_norte_P_3_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -81,7 +81,7 @@ const febrero_norte_P_3_D_3 = {
 };
 
 // Cuarto piso
-const febrero_norte_P_4_D_1 = {
+const julio_norte_P_4_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -89,7 +89,7 @@ const febrero_norte_P_4_D_1 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_4_D_2 = {
+const julio_norte_P_4_D_2 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -97,7 +97,7 @@ const febrero_norte_P_4_D_2 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_4_D_3 = {
+const julio_norte_P_4_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -107,7 +107,7 @@ const febrero_norte_P_4_D_3 = {
 };
 
 // Quinto piso
-const febrero_norte_P_5_D_1 = {
+const julio_norte_P_5_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -115,15 +115,15 @@ const febrero_norte_P_5_D_1 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_5_D_2 = {
-  status: "Disponible",
+const julio_norte_P_5_D_2 = {
+  status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
   get unidad() {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_5_D_3 = {
+const julio_norte_P_5_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -133,15 +133,7 @@ const febrero_norte_P_5_D_3 = {
 };
 
 // Sexto piso
-const febrero_norte_P_6_D_1 = {
-  status: "Vendido",
-  metros: "123.344m²",
-  precio: "122,333.00",
-  get unidad() {
-    return "14 - " + this.metros;
-  },
-};
-const febrero_norte_P_6_D_2 = {
+const julio_norte_P_6_D_1 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -149,7 +141,15 @@ const febrero_norte_P_6_D_2 = {
     return "14 - " + this.metros;
   },
 };
-const febrero_norte_P_6_D_3 = {
+const julio_norte_P_6_D_2 = {
+  status: "Reservado",
+  metros: "123.344m²",
+  precio: "122,333.00",
+  get unidad() {
+    return "14 - " + this.metros;
+  },
+};
+const julio_norte_P_6_D_3 = {
   status: "Reservado",
   metros: "123.344m²",
   precio: "122,333.00",
@@ -159,22 +159,22 @@ const febrero_norte_P_6_D_3 = {
 };
 
 export {
-  febrero_norte_P_1_D_1,
-  febrero_norte_P_1_D_2,
-  febrero_norte_P_1_D_3,
-  febrero_norte_P_2_D_1,
-  febrero_norte_P_2_D_2,
-  febrero_norte_P_2_D_3,
-  febrero_norte_P_3_D_1,
-  febrero_norte_P_3_D_2,
-  febrero_norte_P_3_D_3,
-  febrero_norte_P_4_D_1,
-  febrero_norte_P_4_D_2,
-  febrero_norte_P_4_D_3,
-  febrero_norte_P_5_D_1,
-  febrero_norte_P_5_D_2,
-  febrero_norte_P_5_D_3,
-  febrero_norte_P_6_D_1,
-  febrero_norte_P_6_D_2,
-  febrero_norte_P_6_D_3,
+  julio_norte_P_1_D_1,
+  julio_norte_P_1_D_2,
+  julio_norte_P_1_D_3,
+  julio_norte_P_2_D_1,
+  julio_norte_P_2_D_2,
+  julio_norte_P_2_D_3,
+  julio_norte_P_3_D_1,
+  julio_norte_P_3_D_2,
+  julio_norte_P_3_D_3,
+  julio_norte_P_4_D_1,
+  julio_norte_P_4_D_2,
+  julio_norte_P_4_D_3,
+  julio_norte_P_5_D_1,
+  julio_norte_P_5_D_2,
+  julio_norte_P_5_D_3,
+  julio_norte_P_6_D_1,
+  julio_norte_P_6_D_2,
+  julio_norte_P_6_D_3,
 };
