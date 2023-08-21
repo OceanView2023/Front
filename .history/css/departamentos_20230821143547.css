@@ -115,7 +115,7 @@
 .container-mes-depart-norte img,
 .container-mes-depart-sur img {
   inline-size: 100%;
-  block-size: 100%;
+  block-size: auto;
 }
 .Disponible:hover {
   cursor: pointer;
