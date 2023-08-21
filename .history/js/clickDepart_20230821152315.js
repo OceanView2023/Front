@@ -491,6 +491,7 @@ import {
 
 const variablesEneroNorte = {
   enero_norte_P_1_D_1,
+  //   enero_norte_P_1_D_2,
   enero_norte_P_1_D_3,
   enero_norte_P_2_D_1,
   enero_norte_P_2_D_2,
@@ -903,11 +904,9 @@ const variablesEneroNorte = {
 const depart = document.querySelectorAll(".Disponible");
 
 depart.forEach((depart) => {
-  const img = depart.querySelectorAll("img");
-  img.forEach((img) => {
-    img.addEventListener("click", clickDepart);
-    console.log(img);
-  });
+  const img = depart.querySelector("img");
+  img.addEventListener("click", clickDepart);
+  console.log(depart);
 });
 
 function clickDepart(event) {

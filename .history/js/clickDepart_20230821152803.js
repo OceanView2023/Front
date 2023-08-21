@@ -903,10 +903,9 @@ const variablesEneroNorte = {
 const depart = document.querySelectorAll(".Disponible");
 
 depart.forEach((depart) => {
-  const img = depart.querySelectorAll("img");
+  const img = depart.querySelector("img");
   img.forEach((img) => {
     img.addEventListener("click", clickDepart);
-    console.log(img);
   });
 });
 

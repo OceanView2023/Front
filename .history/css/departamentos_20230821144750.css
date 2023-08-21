@@ -50,7 +50,7 @@
 @media screen and (max-width: 1000px) {
   .container-mes-tab {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(87px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
     cursor: pointer;
     gap: 3px;
   }

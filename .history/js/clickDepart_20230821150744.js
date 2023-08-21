@@ -162,47 +162,6 @@ import {
 } from "./meses-estado/4-abril-sur.js";
 
 import {
-  mayo_norte_P_1_D_1,
-  //   mayo_norte_P_1_D_2,
-  mayo_norte_P_1_D_3,
-  mayo_norte_P_2_D_1,
-  mayo_norte_P_2_D_2,
-  mayo_norte_P_2_D_3,
-  mayo_norte_P_3_D_1,
-  mayo_norte_P_3_D_2,
-  mayo_norte_P_3_D_3,
-  mayo_norte_P_4_D_1,
-  mayo_norte_P_4_D_2,
-  mayo_norte_P_4_D_3,
-  mayo_norte_P_5_D_1,
-  mayo_norte_P_5_D_2,
-  mayo_norte_P_5_D_3,
-  mayo_norte_P_6_D_1,
-  mayo_norte_P_6_D_2,
-  mayo_norte_P_6_D_3,
-} from "./meses-estado/5-mayo-norte.js";
-import {
-  mayo_sur_P_1_D_1,
-  //   mayo_sur_P_1_D_2,
-  mayo_sur_P_1_D_3,
-  mayo_sur_P_2_D_1,
-  mayo_sur_P_2_D_2,
-  mayo_sur_P_2_D_3,
-  mayo_sur_P_3_D_1,
-  mayo_sur_P_3_D_2,
-  mayo_sur_P_3_D_3,
-  mayo_sur_P_4_D_1,
-  mayo_sur_P_4_D_2,
-  mayo_sur_P_4_D_3,
-  mayo_sur_P_5_D_1,
-  mayo_sur_P_5_D_2,
-  mayo_sur_P_5_D_3,
-  mayo_sur_P_6_D_1,
-  mayo_sur_P_6_D_2,
-  mayo_sur_P_6_D_3,
-} from "./meses-estado/5-mayo-sur.js";
-
-import {
   junio_norte_P_1_D_1,
   //   junio_norte_P_1_D_2,
   junio_norte_P_1_D_3,
@@ -221,7 +180,7 @@ import {
   junio_norte_P_6_D_1,
   junio_norte_P_6_D_2,
   junio_norte_P_6_D_3,
-} from "./meses-estado/6-junio-norte.js";
+} from "./meses-estado/5-junio-norte.js";
 import {
   junio_sur_P_1_D_1,
   //   junio_sur_P_1_D_2,
@@ -241,7 +200,7 @@ import {
   junio_sur_P_6_D_1,
   junio_sur_P_6_D_2,
   junio_sur_P_6_D_3,
-} from "./meses-estado/6-junio-sur.js";
+} from "./meses-estado/5-junio-sur.js";
 
 import {
   julio_norte_P_1_D_1,
@@ -262,7 +221,7 @@ import {
   julio_norte_P_6_D_1,
   julio_norte_P_6_D_2,
   julio_norte_P_6_D_3,
-} from "./meses-estado/7-julio-norte.js";
+} from "./meses-estado/6-julio-norte.js";
 import {
   julio_sur_P_1_D_1,
   //   julio_sur_P_1_D_2,
@@ -282,7 +241,7 @@ import {
   julio_sur_P_6_D_1,
   julio_sur_P_6_D_2,
   julio_sur_P_6_D_3,
-} from "./meses-estado/7-julio-sur.js";
+} from "./meses-estado/6-julio-sur.js";
 
 import {
   agosto_norte_P_1_D_1,
@@ -303,7 +262,7 @@ import {
   agosto_norte_P_6_D_1,
   agosto_norte_P_6_D_2,
   agosto_norte_P_6_D_3,
-} from "./meses-estado/8-agosto-norte.js";
+} from "./meses-estado/7-agosto-norte.js";
 import {
   agosto_sur_P_1_D_1,
   //   agosto_sur_P_1_D_2,
@@ -491,6 +450,7 @@ import {
 
 const variablesEneroNorte = {
   enero_norte_P_1_D_1,
+  //   enero_norte_P_1_D_2,
   enero_norte_P_1_D_3,
   enero_norte_P_2_D_1,
   enero_norte_P_2_D_2,
@@ -508,6 +468,7 @@ const variablesEneroNorte = {
   enero_norte_P_6_D_2,
   enero_norte_P_6_D_3,
   enero_sur_P_1_D_1,
+  //   enero_sur_P_1_D_2,
   enero_sur_P_1_D_3,
   enero_sur_P_2_D_1,
   enero_sur_P_2_D_2,
@@ -525,6 +486,7 @@ const variablesEneroNorte = {
   enero_sur_P_6_D_2,
   enero_sur_P_6_D_3,
   febrero_norte_P_1_D_1,
+  //   febrero_norte_P_1_D_2,
   febrero_norte_P_1_D_3,
   febrero_norte_P_2_D_1,
   febrero_norte_P_2_D_2,
@@ -542,6 +504,7 @@ const variablesEneroNorte = {
   febrero_norte_P_6_D_2,
   febrero_norte_P_6_D_3,
   febrero_sur_P_1_D_1,
+  //   febrero_sur_P_1_D_2,
   febrero_sur_P_1_D_3,
   febrero_sur_P_2_D_1,
   febrero_sur_P_2_D_2,
@@ -559,6 +522,7 @@ const variablesEneroNorte = {
   febrero_sur_P_6_D_2,
   febrero_sur_P_6_D_3,
   marzo_norte_P_1_D_1,
+  //   marzo_norte_P_1_D_2,
   marzo_norte_P_1_D_3,
   marzo_norte_P_2_D_1,
   marzo_norte_P_2_D_2,
@@ -576,6 +540,7 @@ const variablesEneroNorte = {
   marzo_norte_P_6_D_2,
   marzo_norte_P_6_D_3,
   marzo_sur_P_1_D_1,
+  //   marzo_sur_P_1_D_2,
   marzo_sur_P_1_D_3,
   marzo_sur_P_2_D_1,
   marzo_sur_P_2_D_2,
@@ -593,6 +558,7 @@ const variablesEneroNorte = {
   marzo_sur_P_6_D_2,
   marzo_sur_P_6_D_3,
   abril_norte_P_1_D_1,
+  //   abril_norte_P_1_D_2,
   abril_norte_P_1_D_3,
   abril_norte_P_2_D_1,
   abril_norte_P_2_D_2,
@@ -609,7 +575,9 @@ const variablesEneroNorte = {
   abril_norte_P_6_D_1,
   abril_norte_P_6_D_2,
   abril_norte_P_6_D_3,
+
   abril_sur_P_1_D_1,
+  //   abril_sur_P_1_D_2,
   abril_sur_P_1_D_3,
   abril_sur_P_2_D_1,
   abril_sur_P_2_D_2,
@@ -626,41 +594,9 @@ const variablesEneroNorte = {
   abril_sur_P_6_D_1,
   abril_sur_P_6_D_2,
   abril_sur_P_6_D_3,
-  mayo_norte_P_1_D_1,
-  mayo_norte_P_1_D_3,
-  mayo_norte_P_2_D_1,
-  mayo_norte_P_2_D_2,
-  mayo_norte_P_2_D_3,
-  mayo_norte_P_3_D_1,
-  mayo_norte_P_3_D_2,
-  mayo_norte_P_3_D_3,
-  mayo_norte_P_4_D_1,
-  mayo_norte_P_4_D_2,
-  mayo_norte_P_4_D_3,
-  mayo_norte_P_5_D_1,
-  mayo_norte_P_5_D_2,
-  mayo_norte_P_5_D_3,
-  mayo_norte_P_6_D_1,
-  mayo_norte_P_6_D_2,
-  mayo_norte_P_6_D_3,
-  mayo_sur_P_1_D_1,
-  mayo_sur_P_1_D_3,
-  mayo_sur_P_2_D_1,
-  mayo_sur_P_2_D_2,
-  mayo_sur_P_2_D_3,
-  mayo_sur_P_3_D_1,
-  mayo_sur_P_3_D_2,
-  mayo_sur_P_3_D_3,
-  mayo_sur_P_4_D_1,
-  mayo_sur_P_4_D_2,
-  mayo_sur_P_4_D_3,
-  mayo_sur_P_5_D_1,
-  mayo_sur_P_5_D_2,
-  mayo_sur_P_5_D_3,
-  mayo_sur_P_6_D_1,
-  mayo_sur_P_6_D_2,
-  mayo_sur_P_6_D_3,
+
   junio_norte_P_1_D_1,
+  //   junio_norte_P_1_D_2,
   junio_norte_P_1_D_3,
   junio_norte_P_2_D_1,
   junio_norte_P_2_D_2,
@@ -677,7 +613,9 @@ const variablesEneroNorte = {
   junio_norte_P_6_D_1,
   junio_norte_P_6_D_2,
   junio_norte_P_6_D_3,
+
   junio_sur_P_1_D_1,
+  //   junio_sur_P_1_D_2,
   junio_sur_P_1_D_3,
   junio_sur_P_2_D_1,
   junio_sur_P_2_D_2,
@@ -694,7 +632,9 @@ const variablesEneroNorte = {
   junio_sur_P_6_D_1,
   junio_sur_P_6_D_2,
   junio_sur_P_6_D_3,
+
   julio_norte_P_1_D_1,
+  //   julio_norte_P_1_D_2,
   julio_norte_P_1_D_3,
   julio_norte_P_2_D_1,
   julio_norte_P_2_D_2,
@@ -711,7 +651,9 @@ const variablesEneroNorte = {
   julio_norte_P_6_D_1,
   julio_norte_P_6_D_2,
   julio_norte_P_6_D_3,
+
   julio_sur_P_1_D_1,
+  //   julio_sur_P_1_D_2,
   julio_sur_P_1_D_3,
   julio_sur_P_2_D_1,
   julio_sur_P_2_D_2,
@@ -728,7 +670,9 @@ const variablesEneroNorte = {
   julio_sur_P_6_D_1,
   julio_sur_P_6_D_2,
   julio_sur_P_6_D_3,
+
   agosto_norte_P_1_D_1,
+  //   agosto_norte_P_1_D_2,
   agosto_norte_P_1_D_3,
   agosto_norte_P_2_D_1,
   agosto_norte_P_2_D_2,
@@ -745,7 +689,9 @@ const variablesEneroNorte = {
   agosto_norte_P_6_D_1,
   agosto_norte_P_6_D_2,
   agosto_norte_P_6_D_3,
+
   agosto_sur_P_1_D_1,
+  //   agosto_sur_P_1_D_2,
   agosto_sur_P_1_D_3,
   agosto_sur_P_2_D_1,
   agosto_sur_P_2_D_2,
@@ -762,7 +708,9 @@ const variablesEneroNorte = {
   agosto_sur_P_6_D_1,
   agosto_sur_P_6_D_2,
   agosto_sur_P_6_D_3,
+
   septiembre_norte_P_1_D_1,
+  //   septiembre_norte_P_1_D_2,
   septiembre_norte_P_1_D_3,
   septiembre_norte_P_2_D_1,
   septiembre_norte_P_2_D_2,
@@ -779,7 +727,9 @@ const variablesEneroNorte = {
   septiembre_norte_P_6_D_1,
   septiembre_norte_P_6_D_2,
   septiembre_norte_P_6_D_3,
+
   septiembre_sur_P_1_D_1,
+  //   septiembre_sur_P_1_D_2,
   septiembre_sur_P_1_D_3,
   septiembre_sur_P_2_D_1,
   septiembre_sur_P_2_D_2,
@@ -796,7 +746,9 @@ const variablesEneroNorte = {
   septiembre_sur_P_6_D_1,
   septiembre_sur_P_6_D_2,
   septiembre_sur_P_6_D_3,
+
   octubre_norte_P_1_D_1,
+  //   octubre_norte_P_1_D_2,
   octubre_norte_P_1_D_3,
   octubre_norte_P_2_D_1,
   octubre_norte_P_2_D_2,
@@ -813,7 +765,9 @@ const variablesEneroNorte = {
   octubre_norte_P_6_D_1,
   octubre_norte_P_6_D_2,
   octubre_norte_P_6_D_3,
+
   octubre_sur_P_1_D_1,
+  //   octubre_sur_P_1_D_2,
   octubre_sur_P_1_D_3,
   octubre_sur_P_2_D_1,
   octubre_sur_P_2_D_2,
@@ -830,7 +784,9 @@ const variablesEneroNorte = {
   octubre_sur_P_6_D_1,
   octubre_sur_P_6_D_2,
   octubre_sur_P_6_D_3,
+
   noviembre_norte_P_1_D_1,
+  //   noviembre_norte_P_1_D_2,
   noviembre_norte_P_1_D_3,
   noviembre_norte_P_2_D_1,
   noviembre_norte_P_2_D_2,
@@ -847,7 +803,9 @@ const variablesEneroNorte = {
   noviembre_norte_P_6_D_1,
   noviembre_norte_P_6_D_2,
   noviembre_norte_P_6_D_3,
+
   noviembre_sur_P_1_D_1,
+  //   noviembre_sur_P_1_D_2,
   noviembre_sur_P_1_D_3,
   noviembre_sur_P_2_D_1,
   noviembre_sur_P_2_D_2,
@@ -864,7 +822,9 @@ const variablesEneroNorte = {
   noviembre_sur_P_6_D_1,
   noviembre_sur_P_6_D_2,
   noviembre_sur_P_6_D_3,
+
   diciembre_norte_P_1_D_1,
+  //   diciembre_norte_P_1_D_2,
   diciembre_norte_P_1_D_3,
   diciembre_norte_P_2_D_1,
   diciembre_norte_P_2_D_2,
@@ -881,7 +841,9 @@ const variablesEneroNorte = {
   diciembre_norte_P_6_D_1,
   diciembre_norte_P_6_D_2,
   diciembre_norte_P_6_D_3,
+
   diciembre_sur_P_1_D_1,
+  //   diciembre_sur_P_1_D_2,
   diciembre_sur_P_1_D_3,
   diciembre_sur_P_2_D_1,
   diciembre_sur_P_2_D_2,
@@ -900,14 +862,11 @@ const variablesEneroNorte = {
   diciembre_sur_P_6_D_3,
 };
 
-const depart = document.querySelectorAll(".Disponible");
+const depart = document.querySelectorAll(".container-departamento");
 
 depart.forEach((depart) => {
-  const img = depart.querySelectorAll("img");
-  img.forEach((img) => {
-    img.addEventListener("click", clickDepart);
-    console.log(img);
-  });
+  const img = depart.querySelector("img");
+  img.addEventListener("click", clickDepart);
 });
 
 function clickDepart(event) {

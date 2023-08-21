@@ -651,8 +651,9 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  block-size: 2.2rem;
-  inline-size: 2.2rem;
+  block-size: 2rem;
+  inline-size: 2rem;
+  padding: 0.5rem;
   background: #d4d5cf;
 }
 .container-navigation-translate {

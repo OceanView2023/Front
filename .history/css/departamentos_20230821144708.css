@@ -42,7 +42,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   cursor: pointer;
-  grid-template-columns: repeat(auto-fill, minmax(91px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
   gap: 3px;
   margin-block-start: 4px;
   border-block-end: 1px solid rgba(0, 0, 0, 0.25);
@@ -50,7 +50,7 @@
 @media screen and (max-width: 1000px) {
   .container-mes-tab {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(87px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     cursor: pointer;
     gap: 3px;
   }
