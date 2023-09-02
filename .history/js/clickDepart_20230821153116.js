@@ -906,6 +906,7 @@ depart.forEach((depart) => {
   const img = depart.querySelectorAll("img");
   img.forEach((img) => {
     img.addEventListener("click", clickDepart);
+    console.log(img);
   });
 });
 

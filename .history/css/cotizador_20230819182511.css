@@ -120,11 +120,6 @@
   padding-inline: 16px;
   block-size: 40px;
   border-radius: 4px;
-  text-decoration: none;
-  cursor: pointer;
-}
-#modal-cotizador .plano-ilustrativo {
-  text-decoration: none;
 }
 #modal-cotizador .descargar-plano-ilustrativo {
   block-size: 40px;
